@@ -85,3 +85,31 @@
   background-color: aliceblue;
   color: gray;
 }
+
+/* Inputs */
+
+.input {
+  border: none;
+  outline: none;
+}
+
+.primary.filled {
+  background-color: aliceblue;
+  border-bottom: solid 1px var(--primary-color);
+  color: black;
+  font-size: 1rem;
+}
+
+.secondary.filled {
+  background-color: aliceblue;
+  border-bottom: solid 1px var(--secondary-color);
+  color: black;
+  font-size: 1rem;
+}
+
+.primary.outlined {
+  background-color: white;
+  border: solid 1px var(--primary-color);
+  color: black;
+  font-size: 1rem;
+}
