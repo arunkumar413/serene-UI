@@ -34,12 +34,12 @@ export default function App() {
         </button>
         <button className="btn large disabled"> disabled </button>
         <button className="btn small error"> Error </button>
-        <button className="btn small warning"> Error </button>
-        <button className="btn small success"> Error </button>
+        <button className="btn small warning"> Warning </button>
+        <button className="btn small success"> Success </button>
         <button className="btn small outlined error"> Error </button>
-        <button className="btn small outlined warning"> Error </button>
-        <button className="btn small outlined success"> Error </button>{' '}
-        <button className="btn large outlined success"> Error </button>
+        <button className="btn small outlined warning"> Warning </button>
+        <button className="btn small outlined success"> Success</button>{' '}
+        <button className="btn large outlined success"> Success </button>
       </div>
       <h3> Inputs </h3>
       <div
