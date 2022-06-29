@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './style.css';
 
 export default function App() {
   function handleChange(evt) {
     console.log(evt);
   }
+
+  useEffect(function () {
+    document.querySelectorAll('button').forEach(function (item) {
+      item.addEventListener('click', function (evt) {
+        console.log(evt.target.className); //copy the className
+      });
+    });
+  }, []);
 
   return (
     <div>
