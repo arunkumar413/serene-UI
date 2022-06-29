@@ -1,0 +1,87 @@
+:root {
+  --primary-color: blue;
+  --secondary-color: rgba(184, 11, 117, 0.959);
+  --text-primary: white;
+  --btn-font-size: 1rem;
+  --error-color: red;
+  --warning-color: orange;
+  --success-color: green;
+}
+
+.small {
+  padding: 0.5rem;
+}
+
+.medium {
+  padding: 0.8rem;
+}
+
+.large {
+  padding: 1.2rem;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: var(--btn-font-size);
+  font-weight: normal;
+}
+
+.primary {
+  background-color: var(--primary-color);
+  color: var(--text-primary);
+}
+
+.secondary {
+  background-color: var(--secondary-color);
+  color: var(--text-primary);
+}
+
+.error {
+  background-color: var(--error-color);
+  color: white;
+}
+.warning {
+  background-color: var(--warning-color);
+}
+
+.success {
+  background-color: var(--success-color);
+  color: white;
+}
+
+.outlined.error {
+  background-color: white;
+  color: var(--error-color);
+  border: solid 1px var(--error-color);
+}
+
+.outlined.warning {
+  background-color: white;
+  color: var(--warning-color);
+  border: solid 1px var(--warning-color);
+}
+.outlined.success {
+  background-color: white;
+  color: var(--success-color);
+  border: solid 1px var(--success-color);
+}
+
+.outlined.primary {
+  background-color: white;
+  border: solid 1px var(--primary-color);
+  color: var(--primary-color);
+}
+
+.outlined.secondary {
+  background-color: white;
+  border: solid 1px var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.disabled {
+  pointer-events: none;
+  background-color: aliceblue;
+  color: gray;
+}
