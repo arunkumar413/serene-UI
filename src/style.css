@@ -119,3 +119,7 @@ input.primary.outlined {
   color: black;
   font-size: 1rem;
 }
+
+p {
+  font-size: 1.2rem;
+}
