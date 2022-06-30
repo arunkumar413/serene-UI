@@ -6,6 +6,12 @@
   --error-color: red;
   --warning-color: orange;
   --success-color: green;
+  --paragraph-font-size: 1rem;
+  --h1-font-size: 2rem;
+}
+
+body {
+  font-family: sans-serif;
 }
 
 .small {
