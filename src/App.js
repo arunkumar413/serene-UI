@@ -25,6 +25,8 @@ export default function App() {
           justifyContent: 'center',
           alignItems: 'center',
           gap: '1rem',
+          boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
+          padding: '1rem',
         }}
       >
         <button className="btn primary small"> btn primary small </button>
@@ -109,6 +111,8 @@ export default function App() {
           justifyContent: 'center',
           alignItems: 'center',
           gap: '1rem',
+          boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
+          padding: '1rem',
         }}
       >
         <input
@@ -175,46 +179,72 @@ export default function App() {
           type="text"
         />
       </div>
-      <div className="headings">
+
+      <h4> Headings </h4>
+      <div
+        className="headings"
+        style={{
+          width: '60%',
+          boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
+          padding: '1rem',
+        }}
+      >
         <h1> Heading 1 </h1>
         <h2> Heading 2 </h2>
         <h3> Heading 3 </h3>
         <h4> heading 4 </h4> <h5> Heading 5 </h5>
         <h6> Heading 6 </h6>
         <h4> Paragraph </h4>
+      </div>
+
+      <h4> Paragraph </h4>
+
+      <div
+        style={{
+          width: '60%',
+          boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
+          padding: '1rem',
+        }}
+      >
         <p>
           {' '}
-          A peep at some distant orb has power to raise and purify our thoughts
-          like a strain of sacred music, or a noble picture, or a passage from
-          the grander poets. It always does one good.
+          I wish to speak a word for Nature, for absolute freedom and wildness,
+          as contrasted with a freedom and culture merely civil, — to regard man
+          as an inhabitant, or a part and parcel of Nature, rather than a member
+          of society. <br /> <br />
+          ---Henry David Thoreau
         </p>
-        <h4> Border radius </h4>
-        <div
-          style={{
-            width: '60%',
-            display: 'grid',
-            gridTemplateColumns: '1fr 1fr 1fr',
-            justifyContent: 'center',
-            alignItems: 'center',
-            gap: '2rem',
-          }}
-        >
-          <button className="btn primary medium round"> round</button>
-          <button className="btn primary outlined medium rounder">
-            {' '}
-            rounder{' '}
-          </button>
-          <button className="btn primary medium roundest"> roundest </button>
+      </div>
 
-          <input
-            className="input medium primary outlined round"
-            value="input medium primary outlined round"
-          />
-          <input
-            className="input medium primary outlined rounder"
-            value="input medium primary outlined rounder"
-          />
-        </div>
+      <h4> Border radius </h4>
+      <div
+        style={{
+          width: '60%',
+          display: 'grid',
+          gridTemplateColumns: '1fr 1fr 1fr',
+          justifyContent: 'center',
+          alignItems: 'center',
+          gap: '2rem',
+          boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
+          padding: '1rem',
+        }}
+      >
+        <button className="btn primary medium round"> round</button>
+        <button className="btn primary outlined medium rounder">
+          {' '}
+          rounder{' '}
+        </button>
+        <button className="btn primary medium roundest"> roundest </button>
+
+        <input className="input medium primary outlined round" value="round" />
+        <input
+          className="input medium primary outlined rounder"
+          value="rounder"
+        />
+        <input
+          className="input medium primary outlined roundest"
+          value="roundest"
+        />
       </div>
     </div>
   );
