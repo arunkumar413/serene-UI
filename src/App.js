@@ -19,7 +19,7 @@ export default function App() {
       <h3> Buttons </h3>
       <div
         style={{
-          width: '50%',
+          width: '60%',
           display: 'grid',
           gridTemplateColumns: '1fr 1fr 1fr',
           justifyContent: 'center',
@@ -54,7 +54,6 @@ export default function App() {
         <button className="btn small error"> btn small error </button>
         <button className="btn medium error"> btn medium error </button>
         <button className="btn large error"> btn large error</button>
-
         <button className="btn small warning"> btn small warning </button>
         <button className="btn medium warning"> btn medium warning </button>
         <button className="btn large warning"> btn large warning </button>
@@ -64,11 +63,42 @@ export default function App() {
         <button className="btn small disabled"> btn small disabled </button>
         <button className="btn medium disabled"> btn medium disabled </button>
         <button className="btn large disabled"> btn large disabled </button>
-
-        {/* <button className="btn small outlined error"> Error </button>
-        <button className="btn small outlined warning"> Warning </button>
-        <button className="btn small outlined success"> Success</button>{' '}
-        <button className="btn large outlined success"> Success </button> */}
+        <button className="btn small outlined error">
+          {' '}
+          btn small outlined error{' '}
+        </button>
+        <button className="btn medium outlined error">
+          {' '}
+          btn medium outlined error{' '}
+        </button>
+        <button className="btn large outlined error">
+          {' '}
+          btn large outlined error{' '}
+        </button>
+        <button className="btn small outlined warning">
+          {' '}
+          btn small outlined warning{' '}
+        </button>
+        <button className="btn medium outlined warning">
+          {' '}
+          btn medium outlined warning{' '}
+        </button>
+        <button className="btn large outlined warning">
+          {' '}
+          btn large outlined warning{' '}
+        </button>
+        <button className="btn small outlined success">
+          {' '}
+          btn small outlined success
+        </button>{' '}
+        <button className="btn medium outlined success">
+          {' '}
+          btn medium outlined success{' '}
+        </button>
+        <button className="btn large outlined success">
+          {' '}
+          btn large outlined success{' '}
+        </button>
       </div>
       <h3> Inputs </h3>
       <div
@@ -151,18 +181,40 @@ export default function App() {
         <h3> Heading 3 </h3>
         <h4> heading 4 </h4> <h5> Heading 5 </h5>
         <h6> Heading 6 </h6>
+        <h4> Paragraph </h4>
         <p>
           {' '}
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+          A peep at some distant orb has power to raise and purify our thoughts
+          like a strain of sacred music, or a noble picture, or a passage from
+          the grander poets. It always does one good.
         </p>
+        <h4> Border radius </h4>
+        <div
+          style={{
+            width: '60%',
+            display: 'grid',
+            gridTemplateColumns: '1fr 1fr 1fr',
+            justifyContent: 'center',
+            alignItems: 'center',
+            gap: '2rem',
+          }}
+        >
+          <button className="btn primary medium round"> round</button>
+          <button className="btn primary outlined medium rounder">
+            {' '}
+            rounder{' '}
+          </button>
+          <button className="btn primary medium roundest"> roundest </button>
+
+          <input
+            className="input medium primary outlined round"
+            value="input medium primary outlined round"
+          />
+          <input
+            className="input medium primary outlined rounder"
+            value="input medium primary outlined rounder"
+          />
+        </div>
       </div>
     </div>
   );

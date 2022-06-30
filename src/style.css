@@ -11,7 +11,7 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .small {
@@ -91,22 +91,25 @@ body {
   background-color: aliceblue;
   color: gray;
 }
+.disabled:hover {
+  cursor: not-allowed;
+}
 
 /* Inputs */
 
 .input {
   border: none;
   outline: none;
+  font-size: 1rem;
 }
 
 input.primary.filled {
   background-color: aliceblue;
   border-bottom: solid 1px var(--primary-color);
   color: black;
-  font-size: 1rem;
 }
 
-.secondary.filled {
+input.secondary.filled {
   background-color: aliceblue;
   border-bottom: solid 1px var(--secondary-color);
   color: black;
@@ -117,9 +120,30 @@ input.primary.outlined {
   background-color: white;
   border: solid 1px var(--primary-color);
   color: black;
-  font-size: 1rem;
+}
+
+input.secondary.outlined {
+  background-color: white;
+  border: solid 1px var(--secondary-color);
+  color: black;
+}
+
+.round {
+  border-radius: 1rem;
+}
+
+.rounder {
+  border-radius: 2rem;
+}
+
+.roundest {
+  border-radius: 2.5rem;
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+  color: rgba(0, 0, 0, 0.87);
+  max-width: 75ch;
 }
