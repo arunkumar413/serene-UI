@@ -212,7 +212,7 @@ export default function App() {
           as contrasted with a freedom and culture merely civil, — to regard man
           as an inhabitant, or a part and parcel of Nature, rather than a member
           of society. <br /> <br />
-          ---Henry David Thoreau
+          <cite> Walking </cite> by Henry David Thoreau
         </p>
       </div>
 
