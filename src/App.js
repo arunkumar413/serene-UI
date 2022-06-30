@@ -194,7 +194,7 @@ export default function App() {
         <h3> Heading 3 </h3>
         <h4> heading 4 </h4> <h5> Heading 5 </h5>
         <h6> Heading 6 </h6>
-        <h4> Paragraph </h4>
+        <p> Paragraph </p>
       </div>
 
       <h4> Paragraph </h4>
