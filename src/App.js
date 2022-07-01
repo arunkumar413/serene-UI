@@ -112,7 +112,7 @@ export default function App() {
             btn large outlined success{" "}
           </button>
         </div>
-        <h3> Inputs </h3>
+        <h3 id="inputs"> Inputs </h3>
         <div
           style={{
             // width: "60%",
@@ -312,7 +312,7 @@ export default function App() {
         }}
       >
         {" "}
-        aside
+        <a href="/#inputs"> Inputs</a>
       </aside>
     </div>
   );
