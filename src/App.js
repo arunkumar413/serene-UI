@@ -23,7 +23,7 @@ export default function App() {
       }}
     >
       <div style={{ gridColumn: "1/10" }}>
-        <h3> Buttons </h3>
+        <h3 id="buttons"> Buttons </h3>
         <div
           style={{
             // width: "60%",
@@ -190,7 +190,7 @@ export default function App() {
           />
         </div>
 
-        <h4> Headings </h4>
+        <h4 id="headings"> Headings </h4>
         <div
           className="headings"
           style={{
@@ -206,11 +206,10 @@ export default function App() {
           <p> Paragraph </p>
         </div>
 
-        <h4> Paragraph </h4>
+        <h4 id="paragraph"> Paragraph </h4>
 
         <div
           style={{
-            width: "60%",
             boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
             padding: "1rem",
           }}
@@ -307,12 +306,33 @@ export default function App() {
       </div>
       <aside
         style={{
+          position: "fixed",
+          top: "9%",
+          left: "75%",
+          width: "300px",
+          height: "100%",
           gridColumn: "10/13",
           boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+          textAlign: "left",
         }}
       >
-        {" "}
-        <a href="/#inputs"> Inputs</a>
+        <nav>
+          <ol>
+            {" "}
+            <li className=" large round list-item primary-hover">
+              <a href="/#buttons"> Buttons</a>
+            </li>
+            <li className=" large round list-item primary-hover">
+              <a href="/#inputs"> Inputs</a>
+            </li>
+            <li className=" large round list-item primary-hover">
+              <a href="/#headings"> Headings</a>
+            </li>
+            <li className=" large round list-item primary-hover">
+              <a href="/#paragraph"> Paragraph</a>
+            </li>
+          </ol>
+        </nav>
       </aside>
     </div>
   );

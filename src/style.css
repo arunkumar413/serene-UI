@@ -178,10 +178,28 @@ p {
   color: var(--secondary-color);
 }
 
-.primary.hover:hover {
+.primary.outlined.hover:hover {
   background-color: var(--primary-hover-background);
 }
 
-.secondary.hover:hover {
+.secondary.outlined.hover:hover {
+  background-color: var(--secondary-hover-background);
+}
+
+li {
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.list-item.primary-hover:hover {
+  background-color: var(--primary-hover-background);
+}
+
+.list-item.secondary-hover:hover {
   background-color: var(--secondary-hover-background);
 }
