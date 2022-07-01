@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import './style.css';
+import React, { useEffect } from "react";
+import "./style.css";
 
 export default function App() {
   function handleChange(evt) {
@@ -7,8 +7,8 @@ export default function App() {
   }
 
   useEffect(function () {
-    document.querySelectorAll('button').forEach(function (item) {
-      item.addEventListener('click', function (evt) {
+    document.querySelectorAll("button").forEach(function (item) {
+      item.addEventListener("click", function (evt) {
         console.log(evt.target.className); //copy the className
       });
     });
@@ -19,14 +19,14 @@ export default function App() {
       <h3> Buttons </h3>
       <div
         style={{
-          width: '60%',
-          display: 'grid',
-          gridTemplateColumns: '1fr 1fr 1fr',
-          justifyContent: 'center',
-          alignItems: 'center',
-          gap: '1rem',
-          boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
-          padding: '1rem',
+          width: "60%",
+          display: "grid",
+          gridTemplateColumns: "1fr 1fr 1fr",
+          justifyContent: "center",
+          alignItems: "center",
+          gap: "1rem",
+          boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+          padding: "1rem",
         }}
       >
         <button className="btn primary small"> btn primary small </button>
@@ -66,57 +66,57 @@ export default function App() {
         <button className="btn medium disabled"> btn medium disabled </button>
         <button className="btn large disabled"> btn large disabled </button>
         <button className="btn small outlined error">
-          {' '}
-          btn small outlined error{' '}
+          {" "}
+          btn small outlined error{" "}
         </button>
         <button className="btn medium outlined error">
-          {' '}
-          btn medium outlined error{' '}
+          {" "}
+          btn medium outlined error{" "}
         </button>
         <button className="btn large outlined error">
-          {' '}
-          btn large outlined error{' '}
+          {" "}
+          btn large outlined error{" "}
         </button>
         <button className="btn small outlined warning">
-          {' '}
-          btn small outlined warning{' '}
+          {" "}
+          btn small outlined warning{" "}
         </button>
         <button className="btn medium outlined warning">
-          {' '}
-          btn medium outlined warning{' '}
+          {" "}
+          btn medium outlined warning{" "}
         </button>
         <button className="btn large outlined warning">
-          {' '}
-          btn large outlined warning{' '}
+          {" "}
+          btn large outlined warning{" "}
         </button>
         <button className="btn small outlined success">
-          {' '}
+          {" "}
           btn small outlined success
-        </button>{' '}
+        </button>{" "}
         <button className="btn medium outlined success">
-          {' '}
-          btn medium outlined success{' '}
+          {" "}
+          btn medium outlined success{" "}
         </button>
         <button className="btn large outlined success">
-          {' '}
-          btn large outlined success{' '}
+          {" "}
+          btn large outlined success{" "}
         </button>
       </div>
       <h3> Inputs </h3>
       <div
         style={{
-          width: '60%',
-          display: 'grid',
-          gridTemplateColumns: '1fr 1fr 1fr',
-          justifyContent: 'center',
-          alignItems: 'center',
-          gap: '1rem',
-          boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
-          padding: '1rem',
+          width: "60%",
+          display: "grid",
+          gridTemplateColumns: "1fr 1fr 1fr",
+          justifyContent: "center",
+          alignItems: "center",
+          gap: "1rem",
+          boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+          padding: "1rem",
         }}
       >
         <input
-          value={'inupt small primary filled'}
+          value={"inupt small primary filled"}
           className="input small primary filled "
           type="text"
         />
@@ -184,9 +184,9 @@ export default function App() {
       <div
         className="headings"
         style={{
-          width: '60%',
-          boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
-          padding: '1rem',
+          width: "60%",
+          boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+          padding: "1rem",
         }}
       >
         <h1> Heading 1 </h1>
@@ -201,13 +201,13 @@ export default function App() {
 
       <div
         style={{
-          width: '60%',
-          boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
-          padding: '1rem',
+          width: "60%",
+          boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+          padding: "1rem",
         }}
       >
         <p>
-          {' '}
+          {" "}
           I wish to speak a word for Nature, for absolute freedom and wildness,
           as contrasted with a freedom and culture merely civil, — to regard man
           as an inhabitant, or a part and parcel of Nature, rather than a member
@@ -219,20 +219,20 @@ export default function App() {
       <h4> Border radius </h4>
       <div
         style={{
-          width: '60%',
-          display: 'grid',
-          gridTemplateColumns: '1fr 1fr 1fr',
-          justifyContent: 'center',
-          alignItems: 'center',
-          gap: '2rem',
-          boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
-          padding: '1rem',
+          width: "60%",
+          display: "grid",
+          gridTemplateColumns: "1fr 1fr 1fr",
+          justifyContent: "center",
+          alignItems: "center",
+          gap: "2rem",
+          boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+          padding: "1rem",
         }}
       >
         <button className="btn primary medium round"> round</button>
         <button className="btn primary outlined medium rounder">
-          {' '}
-          rounder{' '}
+          {" "}
+          rounder{" "}
         </button>
         <button className="btn primary medium roundest"> roundest </button>
 
@@ -245,6 +245,52 @@ export default function App() {
           className="input medium primary outlined roundest"
           value="roundest"
         />
+      </div>
+
+      <h4> Tags</h4>
+      <div
+        style={{
+          width: "60%",
+          display: "grid",
+          gridTemplateColumns: "1fr 1fr 1fr",
+          justifyContent: "center",
+          alignItems: "center",
+          gap: "2rem",
+          boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+          padding: "1rem",
+        }}
+      >
+        {" "}
+        <button className="tag primary"> tag primary</button>
+        <button className="tag secondary"> tag secondary </button>
+        <button className="tag primary outlined"> tag primary outlined </button>
+        <button className="tag secondary outlined">
+          {" "}
+          tag secondary outlined{" "}
+        </button>
+      </div>
+      <h4> Hover classes</h4>
+
+      <div
+        style={{
+          width: "60%",
+          display: "grid",
+          gridTemplateColumns: "1fr 1fr 1fr",
+          justifyContent: "center",
+          alignItems: "center",
+          gap: "2rem",
+          boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+          padding: "1rem",
+        }}
+      >
+        <button className="btn small primary outlined hover">
+          {" "}
+          btn primary outlined hover{" "}
+        </button>{" "}
+        <button className="btn small secondary outlined hover">
+          {" "}
+          btn secondary outlined hover{" "}
+        </button>{" "}
       </div>
     </div>
   );
