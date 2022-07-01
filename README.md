@@ -1,4 +1,6 @@
-A pure CSS libray for composing HTML components. Works on any js library/framework.
+A pure CSS library for composing HTML components. Works on any js library/framework.
+
+Demo link: https://arunkumar413.github.io/css-library/
 
 screenshot:
 
