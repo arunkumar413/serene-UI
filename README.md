@@ -1,3 +1,5 @@
-# react-xki2sw
+A pure CSS libray for composing HTML components. Works on any js library/framework.
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-xki2sw)
+screenshot:
+
+![css library](/public/css-library.png)
