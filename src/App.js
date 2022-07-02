@@ -320,16 +320,16 @@ export default function App() {
           <ol>
             {" "}
             <li className=" large round list-item primary-hover">
-              <a href="/#buttons"> Buttons</a>
+              <a href="/css-library/#buttons"> Buttons</a>
             </li>
             <li className=" large round list-item primary-hover">
-              <a href="/#inputs"> Inputs</a>
+              <a href="/css-library/#inputs"> Inputs</a>
             </li>
             <li className=" large round list-item primary-hover">
-              <a href="/#headings"> Headings</a>
+              <a href="/css-library/#headings"> Headings</a>
             </li>
             <li className=" large round list-item primary-hover">
-              <a href="/#paragraph"> Paragraph</a>
+              <a href="/css-library/#paragraph"> Paragraph</a>
             </li>
           </ol>
         </nav>
