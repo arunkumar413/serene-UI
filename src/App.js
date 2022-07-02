@@ -308,7 +308,7 @@ export default function App() {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "1fr 1fr 1fr",
+            gridTemplateColumns: "1fr 1fr 1fr 1fr",
             justifyContent: "center",
             alignItems: "center",
             gap: "2rem",
@@ -316,8 +316,18 @@ export default function App() {
             padding: "1rem",
           }}
         >
-          {" "}
-          <input type="checkbox" />
+          <label htmlFor="pcheckbox">checkbox primary-checkbox </label>{" "}
+          <input
+            className="checkbox primary-checkbox"
+            id="pcheckbox"
+            type="checkbox"
+          />
+          <label htmlFor="scheckbox">checkbox secondary-checkbox </label>{" "}
+          <input
+            className="checkbox secondary-checkbox"
+            id="scheckbox"
+            type="checkbox"
+          />
         </div>
       </div>
 
