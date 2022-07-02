@@ -132,6 +132,40 @@ input.secondary.outlined {
   color: black;
 }
 
+input[type="checkbox"] {
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  background-color: white;
+  border: solid 2px black;
+  background-clip: circle(20%);
+  padding: 1rem;
+}
+
+input[type="checkbox"]:hover {
+  background-color: var(--primary-hover-background);
+}
+
+input[type="checkbox"]:checked {
+  border: solid 2px var(--primary-color);
+  background-clip: content-box;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "\2714";
+  font-size: 1rem;
+  position: absolute;
+
+  transform: translate(-50%, -50%);
+}
+
+input[type="checkbox"]:checked {
+  background-color: var(--primary-color);
+  border: solid 2px var(--primary-color);
+
+  /* checked state CSS */
+}
+
 .round {
   border-radius: 1rem;
 }
