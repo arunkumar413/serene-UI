@@ -20,6 +20,7 @@ export default function App() {
         display: "grid",
         gridTemplateColumns: "repeat(12, 1fr)",
         gap: "1rem",
+        padding: "1rem",
       }}
     >
       <div style={{ gridColumn: "1/10" }}>
@@ -316,17 +317,77 @@ export default function App() {
             padding: "1rem",
           }}
         >
-          <label htmlFor="pcheckbox">checkbox primary-checkbox </label>{" "}
+          <label htmlFor="pcheckbox">checkbox primary </label>{" "}
           <input
-            className="checkbox primary-checkbox"
+            checked={true}
+            className="checkbox primary"
             id="pcheckbox"
             type="checkbox"
           />
-          <label htmlFor="scheckbox">checkbox secondary-checkbox </label>{" "}
+          <label htmlFor="scheckbox">checkbox secondary </label>{" "}
           <input
-            className="checkbox secondary-checkbox"
+            checked={true}
+            className="checkbox secondary"
             id="scheckbox"
             type="checkbox"
+          />
+        </div>
+
+        <h4> Radio buttons</h4>
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr 1fr 1fr",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "2rem",
+            boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+            padding: "1rem",
+          }}
+        >
+          <label htmlFor="primaryRadio"> radio primary</label>
+          <input
+            checked={true}
+            id="primaryRadio"
+            type="radio"
+            className="radio primary"
+          />
+          <label htmlFor="secondaryRadio"> radio secondary</label>
+
+          <input
+            checked={true}
+            id="secondaryRadio"
+            type="radio"
+            className="radio secondary"
+          />
+        </div>
+        <h4> Range</h4>
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr 1fr 1fr",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "2rem",
+            boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+            padding: "1rem",
+          }}
+        >
+          <label htmlFor="rangePrimary"> range primary </label>
+          <input
+            id="rangePrimary"
+            className="range primary"
+            min={0}
+            max={10}
+            type="range"
+          />
+          <label htmlFor="rangePrimary"> range secondary </label>
+          <input
+            id="rangeSecondary"
+            className="range secondary"
+            min={0}
+            max={10}
+            type="range"
           />
         </div>
       </div>
@@ -334,7 +395,7 @@ export default function App() {
       <aside
         style={{
           position: "fixed",
-          top: "9%",
+          top: "0%",
           left: "75%",
           width: "300px",
           height: "100%",

@@ -137,11 +137,30 @@ input.secondary.outlined {
   height: 1.2rem;
 }
 
+.checkbox.primary {
+  accent-color: var(--primary-color);
+}
+
+.checkbox.secondary {
+  accent-color: var(--secondary-color);
+}
+
 .checkbox.primary-checkbox {
   accent-color: var(--primary-color);
 }
 
 .checkbox.secondary-checkbox {
+  accent-color: var(--secondary-color);
+}
+.radio {
+  width: 1.2rem;
+  height: 1.2em;
+}
+
+.radio.primary {
+  accent-color: var(--primary-color);
+}
+.radio.secondary {
   accent-color: var(--secondary-color);
 }
 
@@ -215,4 +234,12 @@ a {
 
 .list-item.secondary-hover:hover {
   background-color: var(--secondary-hover-background);
+}
+
+.range.primary[type="range"] {
+  accent-color: var(--primary-color);
+}
+
+.range.secondary {
+  accent-color: var(--secondary-color);
 }
