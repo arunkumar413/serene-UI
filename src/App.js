@@ -225,7 +225,7 @@ export default function App() {
           </p>
         </div>
 
-        <h4> Border radius </h4>
+        <h4 id="border-radius"> Border radius </h4>
         <div
           style={{
             display: "grid",
@@ -258,7 +258,7 @@ export default function App() {
           />
         </div>
 
-        <h4> Tags</h4>
+        <h4 id="tags"> Tags</h4>
         <div
           style={{
             display: "grid",
@@ -282,7 +282,7 @@ export default function App() {
             tag secondary outlined{" "}
           </button>
         </div>
-        <h4> Hover classes</h4>
+        <h4 id="hover"> Hover classes</h4>
 
         <div
           style={{
@@ -304,7 +304,7 @@ export default function App() {
             btn small secondary outlined hover{" "}
           </button>{" "}
         </div>
-        <h4> check boxes</h4>
+        <h4 id="checkboxes"> check boxes</h4>
 
         <div
           style={{
@@ -424,7 +424,7 @@ export default function App() {
           <h3 className="color secondary"> color secondary </h3>
         </div>
 
-        <h4> Colors</h4>
+        <h4> Snack bars</h4>
 
         <div
           style={{
@@ -484,6 +484,18 @@ export default function App() {
             </li>
             <li className=" large round list-item primary-hover">
               <a href="/css-library/#paragraph"> Paragraph</a>
+            </li>
+            <li className=" large round list-item primary-hover">
+              <a href="/css-library/#border-radius"> Border radius </a>
+            </li>
+            <li className=" large round list-item primary-hover">
+              <a href="/css-library/#tags"> Tags </a>
+            </li>
+            <li className=" large round list-item primary-hover">
+              <a href="/css-library/#hover"> Hover </a>
+            </li>
+            <li className=" large round list-item primary-hover">
+              <a href="/css-library/#checkboxes"> Check boxes </a>
             </li>
           </ol>
         </nav>
