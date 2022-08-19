@@ -373,7 +373,7 @@ export default function App() {
             padding: "1rem",
           }}
         >
-          <label htmlFor="rangePrimary"> range primary </label>
+          <label htmlFor="rangePrimary"> snack bar </label>
           <input
             id="rangePrimary"
             className="range primary"
@@ -389,6 +389,72 @@ export default function App() {
             max={10}
             type="range"
           />
+        </div>
+
+        <h4> Colors</h4>
+
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr 1fr 1fr",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "2rem",
+            boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+            padding: "1rem",
+          }}
+        >
+          {/* <label htmlFor="rangePrimary"> range primary </label>
+          <input
+            id="rangePrimary"
+            className="range primary"
+            min={0}
+            max={10}
+            type="range"
+          />
+          <label htmlFor="rangePrimary"> range secondary </label>
+          <input
+            id="rangeSecondary"
+            className="range secondary"
+            min={0}
+            max={10}
+            type="range"
+          /> */}
+          <h3 className="color primary"> color primary</h3>
+          <h3 className="color secondary"> color secondary </h3>
+        </div>
+
+        <h4> Colors</h4>
+
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr 1fr 1fr",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "2rem",
+            boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+            padding: "1rem",
+          }}
+        >
+          <div>
+            <p> error snack-bar</p>
+            <span className="error snack-bar"> This is an error message</span>
+          </div>
+          <div>
+            <p> warning snack-bar</p>
+            <span className="warning snack-bar">
+              {" "}
+              This is a warning message
+            </span>
+          </div>
+          <div>
+            <p> success snack-bar</p>
+            <span className="success snack-bar">
+              {" "}
+              This is a success message
+            </span>
+          </div>
         </div>
       </div>
 
