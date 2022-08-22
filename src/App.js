@@ -420,8 +420,12 @@ export default function App() {
             max={10}
             type="range"
           /> */}
-          <h3 className="color primary"> color primary</h3>
-          <h3 className="color secondary"> color secondary </h3>
+          <h3 className="text color primary"> text color primary</h3>
+          <h3 className="text color secondary"> text color secondary </h3>
+          <h3 className="text color default"> text color default </h3>
+          <h3 className="text color error"> text color error </h3>
+          <h3 className="text color warning"> text color warning </h3>
+          <h3 className="text color success"> text color success </h3>
         </div>
 
         <h4> Snack bars</h4>
@@ -438,19 +442,19 @@ export default function App() {
           }}
         >
           <div>
-            <p> error snack-bar</p>
-            <span className="error snack-bar"> This is an error message</span>
+            <p> snack-bar error</p>
+            <span className="snack-bar error"> This is an error message</span>
           </div>
           <div>
-            <p> warning snack-bar</p>
-            <span className="warning snack-bar">
+            <p> snack-bar warning</p>
+            <span className="snack-bar warning">
               {" "}
               This is a warning message
             </span>
           </div>
           <div>
-            <p> success snack-bar</p>
-            <span className="success snack-bar">
+            <p> snack-bar success</p>
+            <span className="snack-bar success">
               {" "}
               This is a success message
             </span>

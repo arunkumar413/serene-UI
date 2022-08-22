@@ -246,13 +246,33 @@ a {
 
 /* colors */
 
-.color.primary {
+.text.color.primary {
   color: var(--primary-color);
   background-color: white;
 }
 
-.color.secondary {
+.text.color.secondary {
   color: var(--secondary-color);
+  background-color: white;
+}
+
+.text.color.default {
+  color: black;
+  background-color: white;
+}
+
+.text.color.error {
+  color: var(--error-color);
+  background-color: white;
+}
+
+.text.color.warning {
+  color: var(--warning-color);
+  background-color: white;
+}
+
+.text.color.success {
+  color: var(--success-color);
   background-color: white;
 }
 
