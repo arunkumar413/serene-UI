@@ -484,28 +484,28 @@ export default function App() {
         <nav>
           <ol>
             {" "}
-            <li className=" large round list-item primary-hover">
+            <li className="large round list-item primary-hover">
               <a href="/css-library/#buttons"> Buttons</a>
             </li>
-            <li className=" large round list-item primary-hover">
+            <li className="large round list-item primary-hover">
               <a href="/css-library/#inputs"> Inputs</a>
             </li>
-            <li className=" large round list-item primary-hover">
+            <li className="large round list-item primary-hover">
               <a href="/css-library/#headings"> Headings</a>
             </li>
-            <li className=" large round list-item primary-hover">
+            <li className="large round list-item primary-hover">
               <a href="/css-library/#paragraph"> Paragraph</a>
             </li>
-            <li className=" large round list-item primary-hover">
+            <li className="large round list-item primary-hover">
               <a href="/css-library/#border-radius"> Border radius </a>
             </li>
-            <li className=" large round list-item primary-hover">
+            <li className="large round list-item primary-hover">
               <a href="/css-library/#tags"> Tags </a>
             </li>
-            <li className=" large round list-item primary-hover">
+            <li className="large round list-item primary-hover">
               <a href="/css-library/#hover"> Hover </a>
             </li>
-            <li className=" large round list-item primary-hover">
+            <li className="large round list-item primary-hover">
               <a href="/css-library/#checkboxes"> Check boxes </a>
             </li>
           </ol>
