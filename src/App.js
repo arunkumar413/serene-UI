@@ -23,6 +23,13 @@ export default function App() {
         padding: "1rem",
       }}
     >
+      <h2
+        className="text color primary"
+        style={{ gridColumn: "1/10", margin: 0, textAlign: "center" }}
+      >
+        {" "}
+        Serene UI
+      </h2>
       <div style={{ gridColumn: "1/10" }}>
         <h3 id="buttons"> Buttons </h3>
         <div
