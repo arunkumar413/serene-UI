@@ -63,13 +63,13 @@ export default function App() {
             btn primary large outlined
           </button>
           <button className="btn secondary small outlined">
-            btn primary small outlined
+            btn secondary small outlined
           </button>
           <button className="btn secondary medium outlined">
-            btn primary medium outlined
+            btn secondary medium outlined
           </button>
           <button className="btn secondary large outlined">
-            btn primary large outlined
+            btn secondary large outlined
           </button>
           <button className="btn small error"> btn small error </button>
           <button className="btn medium error"> btn medium error </button>
