@@ -63,13 +63,13 @@ export default function App() {
             btn primary large outlined
           </button>
           <button className="btn secondary small outlined">
-            btn primary small outlined
+            btn secondary small outlined
           </button>
           <button className="btn secondary medium outlined">
-            btn primary medium outlined
+            btn secondary medium outlined
           </button>
           <button className="btn secondary large outlined">
-            btn primary large outlined
+            btn secondary large outlined
           </button>
           <button className="btn small error"> btn small error </button>
           <button className="btn medium error"> btn medium error </button>
@@ -484,28 +484,28 @@ export default function App() {
         <nav>
           <ol>
             {" "}
-            <li className=" large round list-item primary-hover">
+            <li className="large round list-item primary-hover">
               <a href="/css-library/#buttons"> Buttons</a>
             </li>
-            <li className=" large round list-item primary-hover">
+            <li className="large round list-item primary-hover">
               <a href="/css-library/#inputs"> Inputs</a>
             </li>
-            <li className=" large round list-item primary-hover">
+            <li className="large round list-item primary-hover">
               <a href="/css-library/#headings"> Headings</a>
             </li>
-            <li className=" large round list-item primary-hover">
+            <li className="large round list-item primary-hover">
               <a href="/css-library/#paragraph"> Paragraph</a>
             </li>
-            <li className=" large round list-item primary-hover">
+            <li className="large round list-item primary-hover">
               <a href="/css-library/#border-radius"> Border radius </a>
             </li>
-            <li className=" large round list-item primary-hover">
+            <li className="large round list-item primary-hover">
               <a href="/css-library/#tags"> Tags </a>
             </li>
-            <li className=" large round list-item primary-hover">
+            <li className="large round list-item primary-hover">
               <a href="/css-library/#hover"> Hover </a>
             </li>
-            <li className=" large round list-item primary-hover">
+            <li className="large round list-item primary-hover">
               <a href="/css-library/#checkboxes"> Check boxes </a>
             </li>
           </ol>

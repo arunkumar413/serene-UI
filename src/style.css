@@ -3,6 +3,14 @@
   --secondary-color: rgba(184, 11, 117, 0.959);
   --text-primary: white;
   --btn-font-size: 1rem;
+  --btn-small-font-size: 1rem;
+  --btn-medium-font-size: 1.2rem;
+  --btn-large-font-size: 1.4rem;
+  --btn-primary-font-color: white;
+  --btn-secondary-font-color: white;
+  --small-input-font-size: 1rem;
+  --medium-input-font-size: 1.2rem;
+  --large-input-font-size: 1.6rem;
   --error-color: red;
   --warning-color: orange;
   --success-color: green;
@@ -35,6 +43,28 @@ body {
   font-size: var(--btn-font-size);
   font-weight: normal;
   font-family: "Inter", sans-serif;
+}
+.btn.small {
+  font-size: var(--btn-small-font-size);
+}
+
+.btn.medium {
+  font-size: var(--btn-medium-font-size);
+}
+
+.btn.large {
+  font-size: var(--btn-large-font-size);
+}
+
+.btn.primary {
+  background-color: var(--primary-color);
+  color: var(--text-primary);
+  color: var(--btn-primary-font-color);
+}
+
+.btn.secondary {
+  background-color: var(--secondary-color);
+  color: var(--btn-secondary-font-color);
 }
 
 .primary {
@@ -107,29 +137,47 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-input.primary.filled {
+.input.primary.filled {
   background-color: aliceblue;
   border-bottom: solid 1px var(--primary-color);
   color: black;
 }
 
-input.secondary.filled {
+.input.primary.filled:focus {
+  border-width: 2px;
+}
+
+.input.secondary.filled {
   background-color: aliceblue;
   border-bottom: solid 1px var(--secondary-color);
   color: black;
   font-size: 1rem;
 }
+.input.secondary.filled:focus {
+  border-width: 2px;
+}
 
-input.primary.outlined {
+.input.primary.outlined {
   background-color: white;
   border: solid 1px var(--primary-color);
   color: black;
 }
+.input.primary.outlined:focus {
+  border-width: 2px;
+}
 
-input.secondary.outlined {
+.input.secondary.outlined {
   background-color: white;
   border: solid 1px var(--secondary-color);
   color: black;
+}
+
+.input.secondary.outlined:focus {
+  border-width: 2px;
+}
+
+.input:focus {
+  border-width: 2px;
 }
 
 .checkbox {
@@ -165,11 +213,11 @@ input.secondary.outlined {
 }
 
 .round {
-  border-radius: 1rem;
+  border-radius: 0.8rem;
 }
 
 .rounder {
-  border-radius: 2rem;
+  border-radius: 1.2rem;
 }
 
 .roundest {
@@ -279,4 +327,19 @@ a {
 .snack-bar {
   padding: 0.8rem;
   font-size: 1rem;
+}
+
+.snack-bar.error {
+  background-color: var(--error-color);
+  color: white;
+}
+
+.snack-bar.warning {
+  background-color: var(--warning-color);
+  color: white;
+}
+
+.snack-bar.success {
+  background-color: var(--success-color);
+  color: white;
 }
