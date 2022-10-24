@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import "./style.css";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 export default function App() {
   function handleChange(evt) {
@@ -30,6 +32,12 @@ export default function App() {
         {" "}
         Serene UI
       </h2>
+      <div style={{ gridColumn: "1/10" }}>
+        <p> usage: </p>
+        <SyntaxHighlighter language="html" style={docco}>
+          {'<button class="btn primary large">Submit</button> '}
+        </SyntaxHighlighter>
+      </div>
       <div style={{ gridColumn: "1/10" }}>
         <h3 id="buttons"> Buttons </h3>
         <div
