@@ -493,7 +493,7 @@ export default function Docs() {
           <ol>
             {" "}
             <li className="large round list-item primary-hover">
-              <a href="/css-library/#buttons"> Buttons</a>
+              <a href="/css-library/docs/#buttons"> Buttons</a>
             </li>
             <li className="large round list-item primary-hover">
               <a href="/css-library/#inputs"> Inputs</a>

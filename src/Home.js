@@ -31,6 +31,7 @@ export function Home() {
       <Link to="/docs">
         <button className="btn secondary medium"> Read the Docs</button>
       </Link>
+      
     </div>
   );
 }
