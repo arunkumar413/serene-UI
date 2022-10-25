@@ -28,10 +28,9 @@ export function Home() {
         intuitiveness
       </p>
 
-      <Link to="/docs">
+      <Link to="/css-library/docs">
         <button className="btn secondary medium"> Read the Docs</button>
       </Link>
-      
     </div>
   );
 }
