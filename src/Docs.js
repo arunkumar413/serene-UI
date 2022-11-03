@@ -15,6 +15,7 @@ import { RadioButtons } from "./pages/RadioButtons";
 import { CheckBoxes } from "./pages/checkBoxes";
 import { Tags } from "./pages/Tags";
 import { BorderRadius } from "./pages/BorderRadius";
+import { UsageSteps } from "./utility/UsageSteps";
 
 export default function Docs() {
   function handleChange(evt) {
@@ -46,7 +47,8 @@ export default function Docs() {
         Serene UI
       </h2>
       <div style={{ gridColumn: "1/10" }}>
-        <p> usage: </p>
+        <UsageSteps />
+        <p> Example: </p>
         <SyntaxHighlighter language="html" style={docco}>
           {'<button class="btn primary large">Submit</button> '}
         </SyntaxHighlighter>
