@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/css-library/static/css/main.5c3a6a7d.css",
-    "main.js": "/css-library/static/js/main.7e7bbfa6.js",
-    "index.html": "/css-library/index.html",
-    "main.5c3a6a7d.css.map": "/css-library/static/css/main.5c3a6a7d.css.map",
-    "main.7e7bbfa6.js.map": "/css-library/static/js/main.7e7bbfa6.js.map"
+    "main.css": "/serene-ui/static/css/main.5c3a6a7d.css",
+    "main.js": "/serene-ui/static/js/main.494fcb2c.js",
+    "index.html": "/serene-ui/index.html",
+    "main.5c3a6a7d.css.map": "/serene-ui/static/css/main.5c3a6a7d.css.map",
+    "main.494fcb2c.js.map": "/serene-ui/static/js/main.494fcb2c.js.map"
   },
   "entrypoints": [
     "static/css/main.5c3a6a7d.css",
-    "static/js/main.7e7bbfa6.js"
+    "static/js/main.494fcb2c.js"
   ]
 }
