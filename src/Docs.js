@@ -18,9 +18,9 @@ import { BorderRadius } from "./pages/BorderRadius";
 import { UsageSteps } from "./utility/UsageSteps";
 
 export default function Docs() {
-  function handleChange(evt) {
-    console.log(evt);
-  }
+  // function handleChange(evt) {
+  //   console.log(evt);
+  // }
 
   useEffect(function () {
     document.querySelectorAll("button").forEach(function (item) {

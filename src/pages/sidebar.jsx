@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export function Sidebar() {
   return (
@@ -17,8 +18,11 @@ export function Sidebar() {
       <nav>
         <ol>
           {" "}
-          <li className="large round list-item primary-hover">
+          {/* <li className="large round list-item primary-hover">
             <a href="/serene-ui"> Home</a>
+          </li> */}
+          <li className="large round list-item primary-hover">
+            <Link to="/serene-ui"> Home </Link>
           </li>
           <li className="large round list-item primary-hover">
             <a href="/serene-ui/docs/#buttons"> Buttons</a>

@@ -1,23 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import SyntaxHighlighter from "react-syntax-highlighter";
-import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
-
-import { cssText } from "../utility/cssText";
+// import SyntaxHighlighter from "react-syntax-highlighter";
+// import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 export function Home() {
-  const [cssValue, setCssValue] = useState("");
-  useEffect(function () {
-    console.log(cssText);
-    setCssValue(cssText);
-  }, []);
-
-  function copyCss() {
-    navigator.clipboard.writeText(cssValue).then(function () {
-      alert("CSS copied");
-    });
-  }
-
   return (
     <div
       style={{
