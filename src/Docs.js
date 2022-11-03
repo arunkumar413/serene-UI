@@ -7,6 +7,14 @@ import { Buttons } from "./pages/buttons";
 import { Inputs } from "./pages/inputs";
 import { Sidebar } from "./pages/sidebar";
 import { Text } from "./pages/Text";
+import { Colors } from "./pages/Colors";
+import { SnackBar } from "./pages/SnackBar";
+import { Range } from "./pages/Range";
+import { HoverClasses } from "./pages/HoverClasses";
+import { RadioButtons } from "./pages/RadioButtons";
+import { CheckBoxes } from "./pages/checkBoxes";
+import { Tags } from "./pages/Tags";
+import { BorderRadius } from "./pages/BorderRadius";
 
 export default function Docs() {
   function handleChange(evt) {
@@ -71,241 +79,36 @@ export default function Docs() {
         </div>
 
         <h4 id="border-radius"> Border radius </h4>
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr 1fr",
-            justifyContent: "center",
-            alignItems: "center",
-            gap: "2rem",
-            boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-            padding: "1rem",
-          }}
-        >
-          <button className="btn primary medium round"> round</button>
-          <button className="btn primary outlined medium rounder">
-            {" "}
-            rounder{" "}
-          </button>
-          <button className="btn primary medium roundest"> roundest </button>
 
-          <input
-            className="input medium primary outlined round"
-            value="round"
-          />
-          <input
-            className="input medium primary outlined rounder"
-            value="rounder"
-          />
-          <input
-            className="input medium primary outlined roundest"
-            value="roundest"
-          />
-        </div>
+        <BorderRadius />
+
         {/* end of buttons    */}
 
         <h4 id="tags"> Tags</h4>
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr 1fr",
-            justifyContent: "center",
-            alignItems: "center",
-            gap: "2rem",
-            boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-            padding: "1rem",
-          }}
-        >
-          {" "}
-          <button className="tag primary"> tag primary</button>
-          <button className="tag secondary"> tag secondary </button>
-          <button className="tag primary outlined">
-            {" "}
-            tag primary outlined{" "}
-          </button>
-          <button className="tag secondary outlined">
-            {" "}
-            tag secondary outlined{" "}
-          </button>
-        </div>
+
+        <Tags />
+
         <h4 id="hover"> Hover classes</h4>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr 1fr",
-            justifyContent: "center",
-            alignItems: "center",
-            gap: "2rem",
-            boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-            padding: "1rem",
-          }}
-        >
-          <button className="btn small primary outlined hover">
-            {" "}
-            btn small primary outlined hover{" "}
-          </button>{" "}
-          <button className="btn small secondary outlined hover">
-            {" "}
-            btn small secondary outlined hover{" "}
-          </button>{" "}
-        </div>
+        <HoverClasses />
+
         <h4 id="checkboxes"> check boxes</h4>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr 1fr 1fr",
-            justifyContent: "center",
-            alignItems: "center",
-            gap: "2rem",
-            boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-            padding: "1rem",
-          }}
-        >
-          <label htmlFor="pcheckbox">checkbox primary </label>{" "}
-          <input
-            checked={true}
-            className="checkbox primary"
-            id="pcheckbox"
-            type="checkbox"
-          />
-          <label htmlFor="scheckbox">checkbox secondary </label>{" "}
-          <input
-            checked={true}
-            className="checkbox secondary"
-            id="scheckbox"
-            type="checkbox"
-          />
-        </div>
+        <CheckBoxes />
 
         <h4> Radio buttons</h4>
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr 1fr 1fr",
-            justifyContent: "center",
-            alignItems: "center",
-            gap: "2rem",
-            boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-            padding: "1rem",
-          }}
-        >
-          <label htmlFor="primaryRadio"> radio primary</label>
-          <input
-            checked={true}
-            id="primaryRadio"
-            type="radio"
-            className="radio primary"
-          />
-          <label htmlFor="secondaryRadio"> radio secondary</label>
+        <RadioButtons />
 
-          <input
-            checked={true}
-            id="secondaryRadio"
-            type="radio"
-            className="radio secondary"
-          />
-        </div>
         <h4> Range</h4>
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr 1fr 1fr",
-            justifyContent: "center",
-            alignItems: "center",
-            gap: "2rem",
-            boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-            padding: "1rem",
-          }}
-        >
-          <label htmlFor="rangePrimary"> snack bar </label>
-          <input
-            id="rangePrimary"
-            className="range primary"
-            min={0}
-            max={10}
-            type="range"
-          />
-          <label htmlFor="rangePrimary"> range secondary </label>
-          <input
-            id="rangeSecondary"
-            className="range secondary"
-            min={0}
-            max={10}
-            type="range"
-          />
-        </div>
+        <Range />
 
         <h4> Colors</h4>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr 1fr 1fr",
-            justifyContent: "center",
-            alignItems: "center",
-            gap: "2rem",
-            boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-            padding: "1rem",
-          }}
-        >
-          {/* <label htmlFor="rangePrimary"> range primary </label>
-          <input
-            id="rangePrimary"
-            className="range primary"
-            min={0}
-            max={10}
-            type="range"
-          />
-          <label htmlFor="rangePrimary"> range secondary </label>
-          <input
-            id="rangeSecondary"
-            className="range secondary"
-            min={0}
-            max={10}
-            type="range"
-          /> */}
-          <h3 className="text color primary"> text color primary</h3>
-          <h3 className="text color secondary"> text color secondary </h3>
-          <h3 className="text color default"> text color default </h3>
-          <h3 className="text color error"> text color error </h3>
-          <h3 className="text color warning"> text color warning </h3>
-          <h3 className="text color success"> text color success </h3>
-        </div>
+        <Colors />
 
         <h4> Snack bars</h4>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr 1fr 1fr",
-            justifyContent: "center",
-            alignItems: "center",
-            gap: "2rem",
-            boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-            padding: "1rem",
-          }}
-        >
-          <div>
-            <p> snack-bar error</p>
-            <span className="snack-bar error"> This is an error message</span>
-          </div>
-          <div>
-            <p> snack-bar warning</p>
-            <span className="snack-bar warning">
-              {" "}
-              This is a warning message
-            </span>
-          </div>
-          <div>
-            <p> snack-bar success</p>
-            <span className="snack-bar success">
-              {" "}
-              This is a success message
-            </span>
-          </div>
-        </div>
+        <SnackBar />
       </div>
       <Sidebar />
     </div>

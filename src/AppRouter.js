@@ -6,15 +6,11 @@ import { Inputs } from "./pages/inputs";
 
 export const AppRouter = createBrowserRouter([
   {
-    path: "/css-library",
+    path: "/serene-ui",
     element: <Home />,
   },
   {
-    path: "/css-library/docs",
+    path: "/serene-ui/docs",
     element: <Docs />,
-    children: [
-      { path: "/css-library/docs/buttons", element: <Buttons /> },
-      { path: "/css-library/docs/inputs", element: <Inputs /> },
-    ],
   },
 ]);

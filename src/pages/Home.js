@@ -9,28 +9,34 @@ export function Home() {
         backgroundColor: "teal",
         color: "white",
         textAlign: "center",
+        display: "grid",
+        height: "100vh",
+        justifyContent: "center",
+        alignItems: "center",
       }}
     >
-      <h1> Serene UI</h1>
+      <div>
+        <h1> Serene UI</h1>
 
-      <p
-        className="paragraph"
-        style={{
-          textAlign: "center",
-          width: "100%",
-          marginLeft: "auto",
-          marginRight: "auto",
-          color: "white",
-        }}
-      >
-        Welcome to Serene UI. A simple CSS library to compose HTML components
-        faster. A library made keeping in mind the ease of learning and
-        intuitiveness
-      </p>
+        <p
+          className="paragraph"
+          style={{
+            textAlign: "center",
+            width: "100%",
+            marginLeft: "auto",
+            marginRight: "auto",
+            color: "white",
+          }}
+        >
+          Welcome to Serene UI. A simple CSS library to compose HTML components
+          faster. A library made keeping in mind the ease of learning and
+          intuitiveness
+        </p>
 
-      <Link to="/css-library/docs">
-        <button className="btn secondary medium"> Read the Docs</button>
-      </Link>
+        <Link to="/serene-ui/docs">
+          <button className="btn secondary medium"> Read the Docs</button>
+        </Link>
+      </div>
     </div>
   );
 }

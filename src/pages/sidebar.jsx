@@ -18,28 +18,31 @@ export function Sidebar() {
         <ol>
           {" "}
           <li className="large round list-item primary-hover">
-            <a href="/css-library/docs/#buttons"> Buttons</a>
+            <a href="/serene-ui"> Home</a>
           </li>
           <li className="large round list-item primary-hover">
-            <a href="/css-library/#inputs"> Inputs</a>
+            <a href="/serene-ui/docs/#buttons"> Buttons</a>
           </li>
           <li className="large round list-item primary-hover">
-            <a href="/css-library/#headings"> Headings</a>
+            <a href="/serene-ui/docs/#inputs"> Inputs</a>
           </li>
           <li className="large round list-item primary-hover">
-            <a href="/css-library/#paragraph"> Paragraph</a>
+            <a href="/serene-ui/docs/#headings"> Headings</a>
           </li>
           <li className="large round list-item primary-hover">
-            <a href="/css-library/#border-radius"> Border radius </a>
+            <a href="/serene-ui/docs/#paragraph"> Paragraph</a>
           </li>
           <li className="large round list-item primary-hover">
-            <a href="/css-library/#tags"> Tags </a>
+            <a href="/serene-ui/docs/#border-radius"> Border radius </a>
           </li>
           <li className="large round list-item primary-hover">
-            <a href="/css-library/#hover"> Hover </a>
+            <a href="/serene-ui/docs/#tags"> Tags </a>
           </li>
           <li className="large round list-item primary-hover">
-            <a href="/css-library/#checkboxes"> Check boxes </a>
+            <a href="/serene-ui/docs/#hover"> Hover </a>
+          </li>
+          <li className="large round list-item primary-hover">
+            <a href="/serene-ui/docs/#checkboxes"> Check boxes </a>
           </li>
         </ol>
       </nav>
