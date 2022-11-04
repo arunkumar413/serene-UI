@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/serene-UI/static/css/main.5c3a6a7d.css",
-    "main.js": "/serene-UI/static/js/main.494fcb2c.js",
-    "index.html": "/serene-UI/index.html",
-    "main.5c3a6a7d.css.map": "/serene-UI/static/css/main.5c3a6a7d.css.map",
-    "main.494fcb2c.js.map": "/serene-UI/static/js/main.494fcb2c.js.map"
+    "main.css": "/serene-ui/static/css/main.5c3a6a7d.css",
+    "main.js": "/serene-ui/static/js/main.494fcb2c.js",
+    "index.html": "/serene-ui/index.html",
+    "main.5c3a6a7d.css.map": "/serene-ui/static/css/main.5c3a6a7d.css.map",
+    "main.494fcb2c.js.map": "/serene-ui/static/js/main.494fcb2c.js.map"
   },
   "entrypoints": [
     "static/css/main.5c3a6a7d.css",
