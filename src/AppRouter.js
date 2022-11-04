@@ -1,10 +1,10 @@
-import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import Docs from "./Docs";
 import { Home } from "./pages/Home";
 
 export const AppRouter = createBrowserRouter([
   {
-    path: "/serene-ui",
+    path: "/",
     element: <Home />,
   },
 

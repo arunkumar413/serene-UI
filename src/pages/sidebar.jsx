@@ -22,7 +22,7 @@ export function Sidebar() {
             <a href="/serene-ui"> Home</a>
           </li> */}
           <li className="large round list-item primary-hover">
-            <Link to="/serene-ui"> Home </Link>
+            <Link to="/"> Home </Link>
           </li>
           <li className="large round list-item primary-hover">
             <a href="/serene-ui/docs/#buttons"> Buttons</a>
