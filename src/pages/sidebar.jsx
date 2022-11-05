@@ -48,6 +48,18 @@ export function Sidebar() {
           <li className="large round list-item primary-hover">
             <a href="/serene-ui/docs/#checkboxes"> Check boxes </a>
           </li>
+          <li className="large round list-item primary-hover">
+            <a href="/serene-ui/docs/#radio-buttons"> Radio buttons </a>
+          </li>
+          <li className="large round list-item primary-hover">
+            <a href="/serene-ui/docs/#range-selector"> Range </a>
+          </li>
+          <li className="large round list-item primary-hover">
+            <a href="/serene-ui/docs/#serene-colors"> Colors </a>
+          </li>
+          <li className="large round list-item primary-hover">
+            <a href="/serene-ui/docs/#snack-bars"> Snack bars </a>
+          </li>
         </ol>
       </nav>
     </aside>

@@ -98,17 +98,17 @@ export default function Docs() {
 
         <CheckBoxes />
 
-        <h4> Radio buttons</h4>
+        <h4 id="radio-buttons"> Radio buttons</h4>
         <RadioButtons />
 
-        <h4> Range</h4>
+        <h4 id="range-selector"> Range</h4>
         <Range />
 
-        <h4> Colors</h4>
+        <h4 id="serene-colors"> Colors</h4>
 
         <Colors />
 
-        <h4> Snack bars</h4>
+        <h4 id="snack-bars"> Snack bars</h4>
 
         <SnackBar />
       </div>
