@@ -1,0 +1,129 @@
+:root {
+    --primary-color: purple;
+    --secondary-color: teal;
+  
+    --primary-btn-font-color: white;
+    --secondary-btn-font-color: white;
+  
+    --small-btn-font-size: 1rem;
+    --small-btn-padding: 0.5rem;
+    --small-btn-height: 2rem;
+  
+    --medium-btn-font-size: 1.2rem;
+    --medium-btn-padding: 1rem;
+    --medium-btn-height: 3.2rem;
+  
+    --large-btn-font-size: 1.5rem;
+    --large-btn-padding: 1.5rem;
+    --large-btn-height: 4.5rem;
+  }
+  
+  .App {
+    font-family: sans-serif;
+  }
+  
+  /* Button common settings */
+  
+  .btn-primary-small,
+  .btn-primary-medium,
+  .btn-primary-large,
+  .btn-secondary-small,
+  .btn-secondary-medium,
+  .btn-secondary-large {
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  /* Primary buttton settings */
+  .btn-primary-small,
+  .btn-primary-medium,
+  .btn-primary-large {
+    background-color: var(--primary-color);
+    color: var(--primary-btn-font-color);
+    border: solid 1px var(--primary-color);
+  }
+  
+  /* Secondary button settings */
+  .btn-secondary-small,
+  .btn-secondary-medium,
+  .btn-secondary-large {
+    background-color: var(--secondary-color);
+    color: var(--secondary-btn-font-color);
+    border: solid 1px var(--secondary-color);
+  }
+  
+  /* ----------button Size Settings START----- */
+  
+  /* small button settings */
+  .btn-primary-small,
+  .btn-secondary-small {
+    font-size: var(--small-btn-font-size);
+    /* height: var(--small-btn-height); */
+    padding: var(--small-btn-padding);
+  }
+  
+  /* Medium button settings */
+  .btn-primary-medium,
+  .btn-secondary-medium {
+    font-size: var(--medium-btn-font-size);
+    /* height: var(--medium-btn-height); */
+    padding: var(--medium-btn-padding);
+  }
+  
+  /* Large button settings */
+  .btn-primary-large,
+  .btn-secondary-large {
+    font-size: var(--large-btn-font-size);
+    /* height: var(--large-btn-height); */
+    padding: var(--large-btn-padding);
+  }
+  
+  /* ----------button Size Settings END----- */
+
+
+  .btn-primary-small.btn-primary-small-outlined {
+    border: solid 1px var(--primary-color);
+    background-color: white;
+    color: var(--primary-color);
+  }
+  
+  .btn-primary-medium.btn-primary-medium-outlined {
+    border: solid 1px var(--primary-color);
+    background-color: white;
+    color: var(--primary-color);
+  }
+  
+
+  .btn-primary-large.btn-primary-large-outlined {
+    border: solid 1px var(--primary-color);
+    background-color: white;
+    color: var(--primary-color);
+  }
+
+
+  .btn-secondary-small.btn-seconday-small-outlined {
+    border: solid 1px var(--secondary-color);
+    background-color: white;
+    color: var(--secondary-color);
+  }
+  
+  .btn-secondary-medium.btn-secondary-medium-outlined {
+    border: solid 1px var(--secondary-color);
+    background-color: white;
+    color: var(--secondary-color);
+  }
+  
+
+  .btn-secondary-large.btn-secondary-large-outlined {
+    border: solid 1px var(--secondary-color);
+    background-color: white;
+    color: var(--secondary-color);
+  }
+
+
+  .btn-secondary-small-outlined{
+    border: solid 1px var(--secondary-color);
+    background-color: white;
+    color: var(--secondary-color);
+  }
