@@ -1,10 +1,59 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 export function Buttons() {
+  const btnClasses = [
+    "btn primary small",
+    "btn primary medium",
+    "btn primary large",
+    "btn secondary small",
+    "btn secondary medium",
+    "btn secondary large",
+    "btn primary small outlined",
+    "btn primary medium outlined",
+    "btn primary large outlined",
+    "btn secondary small outlined",
+    "btn secondary medium outlined",
+    "btn secondary large outlined",
+    "btn small error",
+    "btn medium error",
+    "btn large error",
+    "btn small warning",
+    "btn medium warning",
+    "btn large warning",
+    "btn small success",
+    "btn medium success",
+    "btn large success",
+    "btn small disabled",
+    "btn medium disabled",
+    "btn large disabled",
+    "btn small outlined error",
+    "btn medium outlined error",
+    "btn large outlined error",
+    "btn small outlined warning",
+    "btn medium outlined warning",
+    "btn large outlined warning",
+    "btn small outlined success",
+    "btn medium outlined success",
+    "btn large outlined success",
+
+
+  ];
+
+  const btnElements = btnClasses.map(function (item, index) {
+    return (
+      <Fragment key={index.toString()}>
+      
+        <button className={item}>
+          {" "}
+          {item}
+        </button>
+      </Fragment>
+    );
+  });
+
   return (
     <div
       style={{
-        // width: "60%",
         display: "grid",
         gridTemplateColumns: "1fr 1fr 1fr",
         justifyContent: "center",
@@ -14,7 +63,8 @@ export function Buttons() {
         padding: "1rem",
       }}
     >
-      <button className="btn primary small"> btn primary small </button>
+      {btnElements}
+      {/* <button className="btn primary small"> btn primary small </button>
       <button className="btn primary medium"> btn primary medium </button>
       <button className="btn primary large"> btn primary large </button>
       <button className="btn secondary small"> btn secondary small </button>
@@ -85,7 +135,7 @@ export function Buttons() {
       <button className="btn large outlined success">
         {" "}
         btn large outlined success{" "}
-      </button>
+      </button> */}
     </div>
   );
 }

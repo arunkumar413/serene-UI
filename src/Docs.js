@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { Fragment, useEffect } from "react";
 import "./style.css";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
@@ -16,6 +16,8 @@ import { CheckBoxes } from "./pages/checkBoxes";
 import { Tags } from "./pages/Tags";
 import { BorderRadius } from "./pages/BorderRadius";
 import { UsageSteps } from "./utility/UsageSteps";
+import { Headings } from "./pages/Headings";
+import { Paragraph } from "./pages/Paragraph";
 
 export default function Docs() {
   // function handleChange(evt) {
@@ -30,89 +32,62 @@ export default function Docs() {
     });
   }, []);
 
+  const pageList = [
+    {
+      name: "Buttons",
+      page: <Buttons />,
+    },
+
+    { name: "Inputs", page: <Inputs /> },
+    { name: "Headings", page: <Headings /> },
+    { name: "Paragraph", page: <Paragraph /> },
+    { name: "Border radius", page: <BorderRadius /> },
+    { name: "Tags", page: <Tags /> },
+    { name: "Hover", page: <HoverClasses /> },
+    { name: "Check boxes", page: <CheckBoxes /> },
+
+    { name: "Radio buttons", page: <RadioButtons /> },
+    { name: "Range", page: <Range /> },
+    { name: "Colors", page: <Colors /> },
+    { name: "Snack bars", page: <SnackBar /> },
+  ];
+
+  const pageElements = pageList.map(function (item, index) {
+    return (
+      <Fragment key={index.toString()}>
+        <h2 key={index.toString()}> {item.name}</h2>
+        {item.page}
+      </Fragment>
+    );
+  });
+
   return (
     <div
       style={{
         display: "grid",
-        gridTemplateColumns: "repeat(12, 1fr)",
-        gap: "1rem",
-        padding: "1rem",
+        gridTemplateColumns: "repeat(12,1fr)",
+        justifyContent: "center",
+        alignItems: "flex-start",
+        gap: "0.5rem",
       }}
     >
-      <h2
-        className="text color primary"
-        style={{ gridColumn: "1/10", margin: 0, textAlign: "center" }}
+      <div
+        style={{
+          gridColumn: "1/11",
+          padding: "0.5rem",
+        }}
+      >
+        {pageElements}
+      </div>
+
+      <div
+        style={{
+          gridColumn: "11/13",
+        }}
       >
         {" "}
-        Serene UI
-      </h2>
-      <div style={{ gridColumn: "1/10" }}>
-        <UsageSteps />
-        <p> Example: </p>
-        <SyntaxHighlighter language="html" style={docco}>
-          {'<button class="btn primary large">Submit</button> '}
-        </SyntaxHighlighter>
+        <Sidebar />{" "}
       </div>
-      <div style={{ gridColumn: "1/10" }}>
-        <h3 id="buttons"> Buttons </h3>
-        <Buttons />
-        <h3 id="inputs"> Inputs </h3>
-        <Inputs />
-
-        <h4 id="headings"> Headings </h4>
-        <Text />
-
-        <h4 id="paragraph"> Paragraph </h4>
-
-        <div
-          style={{
-            boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-            padding: "1rem",
-          }}
-        >
-          <p>
-            {" "}
-            I wish to speak a word for Nature, for absolute freedom and
-            wildness, as contrasted with a freedom and culture merely civil, —
-            to regard man as an inhabitant, or a part and parcel of Nature,
-            rather than a member of society. <br /> <br />
-            <cite> Walking </cite> by Henry David Thoreau
-          </p>
-        </div>
-
-        <h4 id="border-radius"> Border radius </h4>
-
-        <BorderRadius />
-
-        {/* end of buttons    */}
-
-        <h4 id="tags"> Tags</h4>
-
-        <Tags />
-
-        <h4 id="hover"> Hover classes</h4>
-
-        <HoverClasses />
-
-        <h4 id="checkboxes"> check boxes</h4>
-
-        <CheckBoxes />
-
-        <h4 id="radio-buttons"> Radio buttons</h4>
-        <RadioButtons />
-
-        <h4 id="range-selector"> Range</h4>
-        <Range />
-
-        <h4 id="serene-colors"> Colors</h4>
-
-        <Colors />
-
-        <h4 id="snack-bars"> Snack bars</h4>
-
-        <SnackBar />
-      </div>
-      <Sidebar />
     </div>
   );
 }
