@@ -81,7 +81,7 @@ export function Sidebar() {
       }}
     >
       <nav>
-        <ol style={{paddingLeft:0}}>{linkElements}</ol>
+        <ol style={{ paddingLeft: 0 }}>{linkElements}</ol>
       </nav>
     </aside>
   );

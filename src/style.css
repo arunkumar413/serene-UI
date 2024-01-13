@@ -11,335 +11,298 @@
   --small-input-font-size: 1rem;
   --medium-input-font-size: 1.2rem;
   --large-input-font-size: 1.6rem;
-  --error-color: red;
+  --danger-color: red;
   --warning-color: orange;
   --success-color: green;
   --paragraph-font-size: 1rem;
   --h1-font-size: 2rem;
   --primary-hover-background: aliceblue; /*background color to use when hovering over a primary class element */
   --secondary-hover-background: #ffc0cb33; /* background color to use when hovering over a secondary class element */
+  --small-button-padding: 0.5rem;
+  --medium-button-padding: 0.8rem;
+  --large-button-padding: 1rem;
+
+  --round-radius: 0.5rem;
+  --rounder-radius: 1rem;
+  --roundest-radius: 1.2rem;
 }
 
 body {
   font-family: "Inter", sans-serif;
 }
 
-.small {
-  padding: 0.5rem;
-}
-
-.medium {
-  padding: 0.8rem;
-}
-
-.large {
-  padding: 1.2rem;
-}
-
-.btn {
-  cursor: pointer;
+/* common button styles */
+.ser-btn-primary-small,
+.ser-btn-primary-medium,
+.ser-btn-primary-large,
+.ser-btn-secondary-small,
+.ser-btn-secondary-medium,
+.ser-btn-secondary-large,
+.ser-btn-danger-small,
+.ser-btn-danger-medium,
+.ser-btn-danger-large,
+.ser-btn-warning-small,
+.ser-btn-warning-medium,
+.ser-btn-warning-large,
+.ser-btn-success-small,
+.ser-btn-success-medium,
+.ser-btn-success-large,
+.ser-btn-disabled-small,
+.ser-btn-disabled-medium,
+.ser-btn-disabled-large,
+.ser-btn-error-small-outlined,
+.ser-btn-error-medium-outlined,
+.ser-btn-error-large-outlined,
+.ser-btn-warning-small-outlined,
+.ser-btn-warning-medium-outlined,
+.ser-btn-warning-large-outlined,
+.ser-btn-scuccess-small-outlined,
+.ser-btn-scuccess-medium-outlined,
+.ser-btn-scuccess-large-outlined {
   border: none;
-  border-radius: 0.5rem;
-  font-size: var(--btn-font-size);
-  font-weight: normal;
-  font-family: "Inter", sans-serif;
+  outline: none;
+  cursor: pointer;
 }
-.btn.small {
+
+/* common button small size styles */
+
+.ser-btn-primary-small,
+.ser-btn-secondary-small,
+.ser-btn-primary-small-outlined,
+.ser-btn-secondary-small-outlined,
+.ser-btn-danger-small,
+.ser-btn-warning-small,
+.ser-btn-success-small,
+.ser-btn-disabled-small,
+.ser-btn-error-small-outlined,
+.ser-btn-warning-small-outlined,
+.ser-btn-success-small-outlined {
   font-size: var(--btn-small-font-size);
+  padding: var(--small-button-padding);
 }
 
-.btn.medium {
+.ser-btn-primary-medium,
+.ser-btn-secondary-medium,
+.ser-btn-primary-medium-outlined,
+.ser-btn-secondary-medium-outlined,
+.ser-btn-danger-medium,
+.ser-btn-warning-medium,
+.ser-btn-success-medium,
+.ser-btn-disabled-medium,
+.ser-btn-error-medium-outlined,
+.ser-btn-warning-medium-outlined,
+.ser-btn-success-medium-outlined {
   font-size: var(--btn-medium-font-size);
+  padding: var(--medium-button-padding);
 }
 
-.btn.large {
+/* common button large size styles */
+
+.ser-btn-primary-large,
+.ser-btn-secondary-large,
+.ser-btn-primary-large-outlined,
+.ser-btn-secondary-large-outlined,
+.ser-btn-danger-large,
+.ser-btn-warning-large,
+.ser-btn-success-large,
+.ser-btn-disabled-large,
+.ser-btn-error-large-outlined,
+.ser-btn-warning-large-outlined,
+.ser-btn-success-large-outlined {
   font-size: var(--btn-large-font-size);
+  padding: var(--large-button-padding);
 }
 
-.btn.primary {
-  background-color: var(--primary-color);
-  color: var(--text-primary);
+/* primary common button color styles */
+
+.ser-btn-primary-small,
+.ser-btn-primary-medium,
+.ser-btn-primary-large {
   color: var(--btn-primary-font-color);
+  background-color: var(--primary-color);
 }
 
-.btn.secondary {
+/* secondary common button color styles */
+
+.ser-btn-secondary-small,
+.ser-btn-secondary-medium,
+.ser-btn-secondary-large {
+  color: var(--btn-secondary-font-color);
+  background-color: var(--secondary-color);
+}
+
+.ser-btn-primary-small-outlined,
+.ser-btn-primary-medium-outlined,
+.ser-btn-primary-large-outlined {
+  border: solid 1px var(--primary-color);
+  background-color: white;
+  color: var(--primary-color);
+}
+
+.ser-btn-secondary-small-outlined,
+.ser-btn-secondary-medium-outlined,
+.ser-btn-secondary-large-outlined {
+  border: solid 1px var(--secondary-color);
+  background-color: white;
+  color: var(--secondary-color);
+}
+
+.ser-btn-danger-small,
+.ser-btn-danger-medium,
+.ser-btn-danger-large {
+  background-color: var(--danger-color);
+  color: white;
+}
+
+.ser-btn-warning-small,
+.ser-btn-warning-medium,
+.ser-btn-warning-large {
+  background-color: var(--warning-color);
+  color: black;
+}
+
+.ser-btn-success-small,
+.ser-btn-success-medium,
+.ser-btn-success-large {
+  background-color: var(--success-color);
+  color: white;
+}
+
+.ser-btn-disabled-small,
+.ser-btn-disabled-medium,
+.ser-btn-disabled-large {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.ser-btn-error-small-outlined,
+.ser-btn-error-medium-outlined,
+.ser-btn-error-large-outlined {
+  border: solid 1px var(--danger-color);
+  background-color: white;
+  color: var(--danger-color);
+}
+
+.ser-btn-warning-small-outlined,
+.ser-btn-warning-medium-outlined,
+.ser-btn-warning-large-outlined {
+  border: solid 1px var(--warning-color);
+  background-color: white;
+  color: var(--warning-color);
+}
+
+.ser-btn-success-small-outlined,
+.ser-btn-success-medium-outlined,
+.ser-btn-success-large-outlined {
+  border: solid 1px var(--success-color);
+  background-color: white;
+  color: var(--success-color);
+}
+
+/* Input common styles */
+
+.ser-input-primary-small-filled,
+.ser-input-primary-medium-filled,
+.ser-input-primary-large-filled,
+.ser-input-primary-small-outlined,
+.ser-input-primary-medium-outlined,
+.ser-input-primary-large-outlined,
+.ser-input-secondary-small-filled,
+.ser-input-secondary-medium-filled,
+.ser-input-secondary-large-filled,
+.ser-input-secondary-small-outlined,
+.ser-input-secondary-medium-outlined,
+.ser-input-secondary-large-outlined {
+  outline: none;
+  border: none;
+}
+
+/* Input element small size styles */
+
+.ser-input-primary-small-filled,
+.ser-input-primary-small-outlined,
+.ser-input-secondary-small-filled,
+.ser-input-secondary-small-outlined {
+  padding: var(--small-button-padding);
+}
+
+.ser-input-primary-medium-filled,
+.ser-input-primary-medium-outlined,
+.ser-input-secondary-medium-filled,
+.ser-input-secondary-medium-outlined {
+  padding: var(--medium-button-padding);
+}
+
+.ser-input-primary-large-filled,
+.ser-input-primary-large-outlined,
+.ser-input-secondary-large-filled,
+.ser-input-secondary-large-outlined {
+  padding: var(--large-button-padding);
+}
+
+/* Input variant (primary,secondary) styles */
+
+.ser-input-primary-small-filled,
+.ser-input-primary-medium-filled,
+.ser-input-primary-large-filled {
+  border-bottom: solid 1px var(--primary-color);
+  background-color: aliceblue;
+}
+
+.ser-input-primary-small-outlined,
+.ser-input-primary-medium-outlined,
+.ser-input-primary-large-outlined {
+  border: solid 1px var(--primary-color);
+  background-color: white;
+}
+
+.ser-input-secondary-small-filled,
+.ser-input-secondary-medium-filled,
+.ser-input-secondary-large-filled {
+  border-bottom: solid 1px var(--secondary-color);
+  background-color: aliceblue;
+}
+
+.ser-input-secondary-small-outlined,
+.ser-input-secondary-medium-outlined,
+.ser-input-secondary-large-outlined {
+  border: solid 1px var(--secondary-color);
+  background-color: white;
+}
+
+.ser-round {
+  border-radius: var(--round-radius);
+}
+
+.ser-rounder {
+  border-radius: var(--rounder-radius);
+}
+
+.ser-roundest {
+  border-radius: var(--roundest-radius);
+}
+
+.ser-tag-primary-filled {
+  background-color: var(--primary-color);
+  color: var(--btn-primary-font-color);
+  border: none;
+}
+
+.ser-tag-primary-outlined {
+  border: solid 1px var(--primary-color);
+  color: var(--primary-color);
+  background-color: white;
+}
+
+
+.ser-tag-secondary-filled {
   background-color: var(--secondary-color);
   color: var(--btn-secondary-font-color);
-}
-
-.primary {
-  background-color: var(--primary-color);
-  color: var(--text-primary);
-}
-
-.secondary {
-  background-color: var(--secondary-color);
-  color: var(--text-primary);
-}
-
-.error {
-  background-color: var(--error-color);
-  color: white;
-}
-.warning {
-  background-color: var(--warning-color);
-}
-
-.success {
-  background-color: var(--success-color);
-  color: white;
-}
-
-.outlined.error {
-  background-color: white;
-  color: var(--error-color);
-  border: solid 1px var(--error-color);
-}
-
-.outlined.warning {
-  background-color: white;
-  color: var(--warning-color);
-  border: solid 1px var(--warning-color);
-}
-.outlined.success {
-  background-color: white;
-  color: var(--success-color);
-  border: solid 1px var(--success-color);
-}
-
-.outlined.primary {
-  background-color: white;
-  border: solid 1px var(--primary-color);
-  color: var(--primary-color);
-}
-
-.outlined.secondary {
-  background-color: white;
-  border: solid 1px var(--secondary-color);
-  color: var(--secondary-color);
-}
-
-.disabled {
-  pointer-events: none;
-  background-color: aliceblue;
-  color: gray;
-}
-.disabled:hover {
-  cursor: not-allowed;
-}
-
-/* Inputs */
-
-.input {
   border: none;
-  outline: none;
-  font-size: 1rem;
-  font-family: "Inter", sans-serif;
 }
 
-.input.primary.filled {
-  background-color: aliceblue;
-  border-bottom: solid 1px var(--primary-color);
-  color: black;
-}
-
-.input.primary.filled:focus {
-  border-width: 2px;
-}
-
-.input.secondary.filled {
-  background-color: aliceblue;
-  border-bottom: solid 1px var(--secondary-color);
-  color: black;
-  font-size: 1rem;
-}
-.input.secondary.filled:focus {
-  border-width: 2px;
-}
-
-.input.primary.outlined {
-  background-color: white;
-  border: solid 1px var(--primary-color);
-  color: black;
-}
-.input.primary.outlined:focus {
-  border-width: 2px;
-}
-
-.input.secondary.outlined {
-  background-color: white;
+.ser-tag-secondary-outlined {
   border: solid 1px var(--secondary-color);
-  color: black;
-}
-
-.input.secondary.outlined:focus {
-  border-width: 2px;
-}
-
-.input:focus {
-  border-width: 2px;
-}
-
-.checkbox {
-  width: 1.2rem;
-  height: 1.2rem;
-}
-
-.checkbox.primary {
-  accent-color: var(--primary-color);
-}
-
-.checkbox.secondary {
-  accent-color: var(--secondary-color);
-}
-
-.checkbox.primary-checkbox {
-  accent-color: var(--primary-color);
-}
-
-.checkbox.secondary-checkbox {
-  accent-color: var(--secondary-color);
-}
-.radio {
-  width: 1.2rem;
-  height: 1.2em;
-}
-
-.radio.primary {
-  accent-color: var(--primary-color);
-}
-.radio.secondary {
-  accent-color: var(--secondary-color);
-}
-
-.round {
-  border-radius: 0.8rem;
-}
-
-.rounder {
-  border-radius: 1.2rem;
-}
-
-.roundest {
-  border-radius: 2.5rem;
-}
-
-p {
-  font-size: 1.2rem;
-  font-weight: 400;
-  font-style: normal;
-  color: rgba(0, 0, 0, 0.87);
-  max-width: 75ch;
-}
-
-.tag {
-  outline: none;
-  border: none;
-  font-size: 0.8rem;
-  border-radius: 1rem;
-  padding: 0.2rem;
-}
-
-.tag.primary {
-  background-color: var(--primary-color);
-}
-
-.tag.primary.outlined {
-  background-color: white;
-  color: var(--primary-color);
-}
-
-.tag.secondary {
-  background-color: var(--secondary-color);
-}
-
-.tag.secondary.outlined {
   background-color: white;
   color: var(--secondary-color);
-}
-
-.primary.outlined.hover:hover {
-  background-color: var(--primary-hover-background);
-}
-
-.secondary.outlined.hover:hover {
-  background-color: var(--secondary-hover-background);
-}
-
-li {
-  list-style-type: none;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-
-a {
-  text-decoration: none;
-}
-
-.list-item.primary-hover:hover {
-  background-color: var(--primary-hover-background);
-}
-
-.list-item.secondary-hover:hover {
-  background-color: var(--secondary-hover-background);
-}
-
-.range.primary[type="range"] {
-  accent-color: var(--primary-color);
-}
-
-.range.secondary {
-  accent-color: var(--secondary-color);
-}
-
-/* colors */
-
-.text.color.primary {
-  color: var(--primary-color);
-  background-color: white;
-}
-
-.text.color.secondary {
-  color: var(--secondary-color);
-  background-color: white;
-}
-
-.text.color.default {
-  color: black;
-  background-color: white;
-}
-
-.text.color.error {
-  color: var(--error-color);
-  background-color: white;
-}
-
-.text.color.warning {
-  color: var(--warning-color);
-  background-color: white;
-}
-
-.text.color.success {
-  color: var(--success-color);
-  background-color: white;
-}
-
-.snack-bar {
-  padding: 0.8rem;
-  font-size: 1rem;
-}
-
-.snack-bar.error {
-  background-color: var(--error-color);
-  color: white;
-}
-
-.snack-bar.warning {
-  background-color: var(--warning-color);
-  color: white;
-}
-
-.snack-bar.success {
-  background-color: var(--success-color);
-  color: white;
 }
