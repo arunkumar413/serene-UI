@@ -14,8 +14,8 @@ export function Tags() {
     >
       {" "}
       <button className="ser-tag-primary-filled "> ser-tag-primary-filled</button>
-      <button className="ser-tag-secondary-filled"> tag secondary </button>
-      <button className="ser-tag-primary-outlined"> tag primary outlined </button>
+      <button className="ser-tag-secondary-filled"> ser-tag-secondary-filled </button>
+      <button className="ser-tag-primary-outlined"> ser-tag-primary-outlined </button>
       <button className="ser-tag-secondary-outlined">
         {" "}
         tag secondary outlined{" "}

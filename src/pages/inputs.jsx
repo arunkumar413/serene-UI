@@ -1,6 +1,8 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 export function Inputs() {
+
+
   const inputClasses = [
     "ser-input-primary-small-filled",
     "ser-input-primary-medium-filled",

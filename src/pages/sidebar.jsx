@@ -1,12 +1,10 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
+import AppStyles from "./AppStyles.css";
 
 export function Sidebar() {
+  const [hover, setHover] = useState(false);
   const links = [
-    {
-      name: "Home",
-      link: "/",
-    },
     {
       name: "Buttons",
       link: "/serene-ui/docs/#buttons",
@@ -60,8 +58,17 @@ export function Sidebar() {
   const linkElements = links.map(function (item, index) {
     return (
       <Fragment key={index.toString()}>
-        <li className="large round list-item primary-hover">
-          <a href={`/serene-ui/docs/#${item.link}`}> {item.name}</a>
+        <li
+          style={{ padding: "1rem" }}
+          className="large round list-item primary-hover"
+        >
+          <a
+            style={{ textDecoration: "none" }}
+            href={`/serene-ui/docs/#${item.link}`}
+          >
+            {" "}
+            {item.name}
+          </a>
         </li>
       </Fragment>
     );
@@ -71,17 +78,26 @@ export function Sidebar() {
     <aside
       style={{
         position: "fixed",
-        // top: "0%",
-        // left: "75%",
         width: "100%",
         height: "100vh",
-        // gridColumn: "10/13",
         boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-        // textAlign: "left",
+        overflow: "scroll",
       }}
     >
       <nav>
-        <ol style={{ paddingLeft: 0 }}>{linkElements}</ol>
+        <ol style={{ paddingLeft: 0, listStyle: "none" }}>
+          <li
+            style={{ padding: "1rem" }}
+            className="large round list-item primary-hover"
+          >
+            <Link style={{ textDecoration: "none" }} to="/">
+              {" "}
+              Home
+            </Link>
+          </li>
+
+          {linkElements}
+        </ol>
       </nav>
     </aside>
   );

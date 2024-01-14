@@ -33,11 +33,11 @@ export function Home() {
         >
           Welcome to Serene UI. A simple CSS library to compose HTML components
           faster. A library made keeping in mind the ease of learning and
-          intuitiveness
+          intuitiveness.
         </p>
 
         <Link to="/serene-ui/docs">
-          <button className="btn secondary medium"> Read the Docs</button>
+          <button className="ser-btn-secondary-medium"> Read the Docs</button>
         </Link>
         <div style={{ padding: 10, textAlign: "center" }}></div>
 

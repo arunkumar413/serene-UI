@@ -48,7 +48,7 @@ export default function Docs() {
 
     { name: "Radio buttons", page: <RadioButtons /> },
     { name: "Range", page: <Range /> },
-    { name: "Colors", page: <Colors /> },
+    { name: "Colors (apply on h1-h6 and paragraph tags)", page: <Colors /> },
     { name: "Snack bars", page: <SnackBar /> },
   ];
 

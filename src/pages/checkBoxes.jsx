@@ -1,11 +1,29 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 export function CheckBoxes() {
+  const checkboxColors = [
+    "ser-checkbox-primary-small",
+    "ser-checkbox-primary-medium",
+    "ser-checkbox-primary-large",
+    "ser-checkbox-secondary-small",
+    "ser-checkbox-secondary-medium",
+    "ser-checkbox-secondary-large"
+  ];
+
+  const checkboxElements = checkboxColors.map(function (item, index) {
+    return (
+      <div key={index.toString()}>
+        <label htmlFor={item}>{item}</label>{" "}
+        <input checked={true} className={item} id={item} type="checkbox" />
+      </div>
+    );
+  });
+
   return (
     <div
       style={{
         display: "grid",
-        gridTemplateColumns: "1fr 1fr 1fr 1fr",
+        gridTemplateColumns: "1fr 1fr 1fr",
         justifyContent: "center",
         alignItems: "center",
         gap: "2rem",
@@ -13,20 +31,7 @@ export function CheckBoxes() {
         padding: "1rem",
       }}
     >
-      <label htmlFor="pcheckbox">checkbox primary </label>{" "}
-      <input
-        checked={true}
-        className="checkbox primary"
-        id="pcheckbox"
-        type="checkbox"
-      />
-      <label htmlFor="scheckbox">checkbox secondary </label>{" "}
-      <input
-        checked={true}
-        className="checkbox secondary"
-        id="scheckbox"
-        type="checkbox"
-      />
+      {checkboxElements}
     </div>
   );
 }
