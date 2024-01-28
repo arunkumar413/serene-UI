@@ -4,7 +4,7 @@ A pure CSS library for composing HTML components. Works with any js library/fram
 
 Despite easy learning curve, CSS continue to take a lot of time in adjusting, previewing the components. This robs developers of their precious development time. This UI library simplifies composing the components just by adding CSS classes that are easy to learn.
 
-### Pholosophy
+### Philosophy
 
 Serene UI tries to apply the CSS classes at the HTML elements only. Take for example, a button component.
 Serene UI classes are applied at the button tag and user is free to implement their own button group component using CSS grid or flexbox layout in their own favorite framwork such as react, angular etc,. Thus serene UI is framework agnostic. 
