@@ -7,51 +7,51 @@ export function Sidebar() {
   const links = [
     {
       name: "Buttons",
-      link: "/serene-ui/docs/#buttons",
+      link: "#buttons",
     },
     {
       name: "Inputs",
-      link: "/serene-ui/docs/#inputs",
+      link: "#inputs",
     },
     {
       name: "Headings",
-      link: "/serene-ui/docs/#headinigs",
+      link: "#headinigs",
     },
     {
       name: "Paragraph",
-      link: "/serene-ui/docs/#paragraph",
+      link: "#paragraph",
     },
     {
       name: "Border radius",
-      link: "/serene-ui/docs/#border-radius",
+      link: "#border-radius",
     },
     {
       name: "Tags",
-      link: "/serene-ui/docs/#tags",
+      link: "#tags",
     },
     {
       name: "Hover",
-      link: "/serene-ui/docs/#hover",
+      link: "#hover",
     },
     {
       name: "Check boxes",
-      link: "/serene-ui/docs/#checkboxes",
+      link: "#checkboxes",
     },
     {
       name: "Radio buttons",
-      link: "/serene-ui/docs/#radio-buttons",
+      link: "#radio-buttons",
     },
     {
       name: "Range",
-      link: "/serene-ui/docs/#range-selector",
+      link: "#range-selector",
     },
     {
       name: "Colors",
-      link: "/serene-ui/docs/#serene-colors",
+      link: "#serene-colors",
     },
     {
       name: "Snack bars",
-      link: "/serene-ui/docs/#snack-bars",
+      link: "#snack-bars",
     },
   ];
 
@@ -64,7 +64,7 @@ export function Sidebar() {
         >
           <a
             style={{ textDecoration: "none" }}
-            href={`/serene-ui/docs/#${item.link}`}
+            href={`/serene-ui/docs${item.link}`}
           >
             {" "}
             {item.name}

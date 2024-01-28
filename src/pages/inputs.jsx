@@ -31,6 +31,7 @@ export function Inputs() {
 
   return (
     <div
+    id='#inputs'
       style={{
         // width: "60%",
         display: "grid",
