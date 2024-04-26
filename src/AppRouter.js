@@ -7,6 +7,13 @@ import { Inputs } from "./pages/inputs";
 import { Headings } from "./pages/Headings";
 import { Paragraph } from "./pages/Paragraph";
 import { BorderRadius } from "./pages/BorderRadius";
+import { Tags } from "./pages/Tags";
+import { HoverClasses } from "./pages/HoverClasses";
+import { CheckBoxes } from "./pages/checkBoxes";
+import { RadioButtons } from "./pages/RadioButtons";
+import { Range } from "./pages/Range";
+import { Colors } from "./pages/Colors";
+import { SnackBar } from "./pages/SnackBar";
 
 export const AppRouter = createBrowserRouter([
   {
@@ -42,6 +49,34 @@ export const AppRouter = createBrowserRouter([
       {
         path: "border-radius",
         element: <BorderRadius />,
+      },
+      {
+        path: "tags",
+        element: <Tags />,
+      },
+      {
+        path: "hover",
+        element: <HoverClasses />,
+      },
+      {
+        path: "checkboxes",
+        element: <CheckBoxes />,
+      },
+      {
+        path: "radio-buttons",
+        element: <RadioButtons />,
+      },
+      {
+        path: "range-selector",
+        element: <Range />,
+      },
+      {
+        path: "serene-colors",
+        element: <Colors />,
+      },
+      {
+        path: "snack-bars",
+        element: <SnackBar />,
       },
     ],
   },

@@ -31,31 +31,31 @@ export function Sidebar() {
     },
     {
       name: "Tags",
-      link: "#tags",
+      link: "/tags",
     },
     {
       name: "Hover",
-      link: "#hover",
+      link: "/hover",
     },
     {
       name: "Check boxes",
-      link: "#checkboxes",
+      link: "/checkboxes",
     },
     {
       name: "Radio buttons",
-      link: "#radio-buttons",
+      link: "/radio-buttons",
     },
     {
       name: "Range",
-      link: "#range-selector",
+      link: "/range-selector",
     },
     {
       name: "Colors",
-      link: "#serene-colors",
+      link: "/serene-colors",
     },
     {
       name: "Snack bars",
-      link: "#snack-bars",
+      link: "/snack-bars",
     },
   ];
 
@@ -66,13 +66,13 @@ export function Sidebar() {
           style={{ padding: "1rem" }}
           className="large round list-item primary-hover"
         >
-          <a
+          <Link
             style={{ textDecoration: "none" }}
-            href={`/serene-ui/docs${item.link}`}
+            to={`/serene-ui/docs${item.link}`}
           >
             {" "}
             {item.name}
-          </a>
+          </Link>
         </li>
       </Fragment>
     );
