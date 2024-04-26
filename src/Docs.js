@@ -18,6 +18,7 @@ import { BorderRadius } from "./pages/BorderRadius";
 import { UsageSteps } from "./utility/UsageSteps";
 import { Headings } from "./pages/Headings";
 import { Paragraph } from "./pages/Paragraph";
+import { Steps } from "./pages/Steps";
 
 export default function Docs() {
   // function handleChange(evt) {
@@ -33,6 +34,10 @@ export default function Docs() {
   }, []);
 
   const pageList = [
+    {
+      name: "Steps",
+      page: <Steps />,
+    },
     {
       name: "Buttons",
       page: <Buttons />,
@@ -79,7 +84,6 @@ export default function Docs() {
       >
         {pageElements}
       </div>
-
       <div
         style={{
           gridColumn: "11/13",

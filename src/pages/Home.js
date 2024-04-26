@@ -36,7 +36,7 @@ export function Home() {
           intuitiveness.
         </p>
 
-        <Link to="/serene-ui/docs">
+        <Link to="/serene-ui/docs/all">
           <button className="ser-btn-secondary-medium"> Read the Docs</button>
         </Link>
         <div style={{ padding: 10, textAlign: "center" }}></div>

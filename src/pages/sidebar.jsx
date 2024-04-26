@@ -6,24 +6,28 @@ export function Sidebar() {
   const [hover, setHover] = useState(false);
   const links = [
     {
+      name: "All",
+      link: "/all",
+    },
+    {
       name: "Buttons",
-      link: "#buttons",
+      link: "/buttons",
     },
     {
       name: "Inputs",
-      link: "#inputs",
+      link: "/inputs",
     },
     {
       name: "Headings",
-      link: "#headinigs",
+      link: "/headings",
     },
     {
       name: "Paragraph",
-      link: "#paragraph",
+      link: "/paragraph",
     },
     {
       name: "Border radius",
-      link: "#border-radius",
+      link: "/border-radius",
     },
     {
       name: "Tags",
