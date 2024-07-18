@@ -57,6 +57,10 @@ export function Sidebar() {
       name: "Snack bars",
       link: "/snack-bars",
     },
+    {
+      name: "Accordians",
+      link: "/accordians",
+    },
   ];
 
   const linkElements = links.map(function (item, index) {

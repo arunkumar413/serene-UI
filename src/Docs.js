@@ -19,6 +19,7 @@ import { UsageSteps } from "./utility/UsageSteps";
 import { Headings } from "./pages/Headings";
 import { Paragraph } from "./pages/Paragraph";
 import { Steps } from "./pages/Steps";
+import { Accordian } from "./pages/accordians";
 
 export default function Docs() {
   // function handleChange(evt) {
@@ -55,6 +56,7 @@ export default function Docs() {
     { name: "Range", page: <Range /> },
     { name: "Colors (apply on h1-h6 and paragraph tags)", page: <Colors /> },
     { name: "Snack bars", page: <SnackBar /> },
+    { name: "Accordians", page: <Accordian /> },
   ];
 
   const pageElements = pageList.map(function (item, index) {
