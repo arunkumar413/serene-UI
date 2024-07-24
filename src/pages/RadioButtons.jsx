@@ -1,11 +1,35 @@
 import React from "react";
 
 export function RadioButtons() {
+  const radioClasses = [
+    "ser-radio-primary-small",
+    "ser-radio-primary-medium",
+    "ser-radio-primary-large",
+
+    "ser-radio-secondary-small",
+    "ser-radio-secondary-medium",
+    "ser-radio-secondary-large",
+  ];
+
+  const radioElements = radioClasses.map(function (item, index) {
+    return (
+      <div key={index.toString()}>
+        <label htmlFor={item}> {item}</label>
+        <input
+          checked={true}
+          id={item}
+          type="radio"
+          className={item}
+        />
+      </div>
+    );
+  });
+
   return (
     <div
       style={{
         display: "grid",
-        gridTemplateColumns: "1fr 1fr 1fr 1fr",
+        gridTemplateColumns: "1fr 1fr 1fr",
         justifyContent: "center",
         alignItems: "center",
         gap: "2rem",
@@ -13,21 +37,7 @@ export function RadioButtons() {
         padding: "1rem",
       }}
     >
-      <label htmlFor="primaryRadio"> radio primary</label>
-      <input
-        checked={true}
-        id="primaryRadio"
-        type="radio"
-        className="radio primary"
-      />
-      <label htmlFor="secondaryRadio"> radio secondary</label>
-
-      <input
-        checked={true}
-        id="secondaryRadio"
-        type="radio"
-        className="radio secondary"
-      />
+      {radioElements}
     </div>
   );
 }

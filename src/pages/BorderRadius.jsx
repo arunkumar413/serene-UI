@@ -13,18 +13,30 @@ export function BorderRadius() {
         padding: "1rem",
       }}
     >
-      <button className="btn primary medium round"> round</button>
-      <button className="btn primary outlined medium rounder"> rounder </button>
-      <button className="btn primary medium roundest"> roundest </button>
+      <button className="ser-btn-primary-small ser-round">
+        {" "}
+        ser-btn-primary-small ser-round
+      </button>
+      <button className="ser-btn-primary-small ser-rounder">
+        {" "}
+        ser-btn-primary-small ser-rounder{" "}
+      </button>
+      <button className="ser-btn-primary-small ser-roundest">
+        {" "}
+        ser-btn-primary-small ser-roundest{" "}
+      </button>
 
-      <input className="input medium primary outlined round" value="round" />
       <input
-        className="input medium primary outlined rounder"
-        value="rounder"
+        className="ser-input-primary-small-outlined ser-round"
+        value="ser-input-primary-small-outlined ser-round"
       />
       <input
-        className="input medium primary outlined roundest"
-        value="roundest"
+        className="ser-input-primary-medium-outlined ser-rounder"
+        value="ser-input-primary-medium-outlined ser-rounder"
+      />
+      <input
+        className="ser-input-secondary-medium-outlined ser-roundest"
+        value="ser-input-secondary-medium-outlined ser-roundest"
       />
     </div>
   );

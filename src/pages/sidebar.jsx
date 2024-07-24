@@ -1,65 +1,110 @@
-import React from "react";
+import React, { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
+import AppStyles from "./AppStyles.css";
 
 export function Sidebar() {
+  const [hover, setHover] = useState(false);
+  const links = [
+    {
+      name: "All",
+      link: "/all",
+    },
+    {
+      name: "Buttons",
+      link: "/buttons",
+    },
+    {
+      name: "Inputs",
+      link: "/inputs",
+    },
+    {
+      name: "Headings",
+      link: "/headings",
+    },
+    {
+      name: "Paragraph",
+      link: "/paragraph",
+    },
+    {
+      name: "Border radius",
+      link: "/border-radius",
+    },
+    {
+      name: "Tags",
+      link: "/tags",
+    },
+    {
+      name: "Hover",
+      link: "/hover",
+    },
+    {
+      name: "Check boxes",
+      link: "/checkboxes",
+    },
+    {
+      name: "Radio buttons",
+      link: "/radio-buttons",
+    },
+    {
+      name: "Range",
+      link: "/range-selector",
+    },
+    {
+      name: "Colors",
+      link: "/serene-colors",
+    },
+    {
+      name: "Snack bars",
+      link: "/snack-bars",
+    },
+    {
+      name: "Accordians",
+      link: "/accordians",
+    },
+  ];
+
+  const linkElements = links.map(function (item, index) {
+    return (
+      <Fragment key={index.toString()}>
+        <li
+          style={{ padding: "1rem" }}
+          className="large round list-item primary-hover"
+        >
+          <Link
+            style={{ textDecoration: "none" }}
+            to={`/serene-ui/docs${item.link}`}
+          >
+            {" "}
+            {item.name}
+          </Link>
+        </li>
+      </Fragment>
+    );
+  });
+
   return (
     <aside
       style={{
         position: "fixed",
-        top: "0%",
-        left: "75%",
-        width: "300px",
-        height: "100%",
-        gridColumn: "10/13",
+        width: "100%",
+        height: "100vh",
         boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-        textAlign: "left",
+        overflow: "scroll",
       }}
     >
       <nav>
-        <ol>
-          {" "}
-          {/* <li className="large round list-item primary-hover">
-            <a href="/serene-ui"> Home</a>
-          </li> */}
-          <li className="large round list-item primary-hover">
-            <Link to="/"> Home </Link>
+        <ol style={{ paddingLeft: 0, listStyle: "none" }}>
+          <li
+            style={{ padding: "1rem" }}
+            className="large round list-item primary-hover"
+          >
+            <Link style={{ textDecoration: "none" }} to="/">
+              {" "}
+              Home
+            </Link>
           </li>
-          <li className="large round list-item primary-hover">
-            <a href="/serene-ui/docs/#buttons"> Buttons</a>
-          </li>
-          <li className="large round list-item primary-hover">
-            <a href="/serene-ui/docs/#inputs"> Inputs</a>
-          </li>
-          <li className="large round list-item primary-hover">
-            <a href="/serene-ui/docs/#headings"> Headings</a>
-          </li>
-          <li className="large round list-item primary-hover">
-            <a href="/serene-ui/docs/#paragraph"> Paragraph</a>
-          </li>
-          <li className="large round list-item primary-hover">
-            <a href="/serene-ui/docs/#border-radius"> Border radius </a>
-          </li>
-          <li className="large round list-item primary-hover">
-            <a href="/serene-ui/docs/#tags"> Tags </a>
-          </li>
-          <li className="large round list-item primary-hover">
-            <a href="/serene-ui/docs/#hover"> Hover </a>
-          </li>
-          <li className="large round list-item primary-hover">
-            <a href="/serene-ui/docs/#checkboxes"> Check boxes </a>
-          </li>
-          <li className="large round list-item primary-hover">
-            <a href="/serene-ui/docs/#radio-buttons"> Radio buttons </a>
-          </li>
-          <li className="large round list-item primary-hover">
-            <a href="/serene-ui/docs/#range-selector"> Range </a>
-          </li>
-          <li className="large round list-item primary-hover">
-            <a href="/serene-ui/docs/#serene-colors"> Colors </a>
-          </li>
-          <li className="large round list-item primary-hover">
-            <a href="/serene-ui/docs/#snack-bars"> Snack bars </a>
-          </li>
+
+          {linkElements}
         </ol>
       </nav>
     </aside>

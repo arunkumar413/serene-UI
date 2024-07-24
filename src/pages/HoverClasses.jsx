@@ -13,13 +13,13 @@ export function HoverClasses(){
           padding: "1rem",
         }}
       >
-        <button className="btn small primary outlined hover">
+        <button className="ser-btn-primary-small-outlined ser-primary-hover">
           {" "}
-          btn small primary outlined hover{" "}
+          ser-btn-primary-small-outlined ser-primary-hover
         </button>{" "}
-        <button className="btn small secondary outlined hover">
+        <button className="ser-btn-secondary-small-outlined ser-secondary-hover">
           {" "}
-          btn small secondary outlined hover{" "}
+          ser-btn-secondary-small-outlined ser-secondary-hover
         </button>{" "}
       </div>
     )

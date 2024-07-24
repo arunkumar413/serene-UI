@@ -1,86 +1,47 @@
-import React from "react";
+import React, { Fragment } from "react";
 
+export function Inputs() {
+  const inputClasses = [
+    "ser-input-primary-small-filled",
+    "ser-input-primary-medium-filled",
+    "ser-input-primary-large-filled",
 
-export function Inputs(){
+    "ser-input-secondary-small-filled",
+    "ser-input-secondary-medium-filled",
+    "ser-input-secondary-large-filled",
 
+    "ser-input-primary-small-outlined",
+    "ser-input-primary-medium-outlined",
+    "ser-input-primary-large-outlined",
 
-    return(
-        <div
-          style={{
-            // width: "60%",
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr 1fr",
-            justifyContent: "center",
-            alignItems: "center",
-            gap: "1rem",
-            boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-            padding: "1rem",
-          }}
-        >
-          <input
-            value={"inupt small primary filled"}
-            className="input small primary filled "
-            type="text"
-          />
-          <input
-            value="input medium primary filled"
-            className="input medium primary filled "
-            type="text"
-          />
-          <input
-            value="input large primary filled"
-            className="input large primary filled "
-            type="text"
-          />
+    "ser-input-secondary-small-outlined",
+    "ser-input-secondary-medium-outlined",
+    "ser-input-secondary-large-outlined",
+  ];
 
-          <input
-            value="input small primary outlined"
-            className="input small primary outlined "
-            type="text"
-          />
-          <input
-            value="input medium primary outlined"
-            className="input medium primary outlined "
-            type="text"
-          />
-          <input
-            value="input large primary outlined"
-            className="input large primary outlined "
-            type="text"
-          />
+  const inputElements = inputClasses.map(function (item, index) {
+    return (
+      <>
+        <input value={item} className={item} type="text" />
+      </>
+    );
+  });
 
-          <input
-            value="input small secondary filled"
-            className="input small secondary filled "
-            type="text"
-          />
-          <input
-            value="input medium secondary filled"
-            className="input medium secondary filled "
-            type="text"
-          />
-          <input
-            value="input large secondary filled"
-            className="input large secondary filled "
-            type="text"
-          />
-
-          <input
-            value="input small secondary outlined"
-            className="input small secondary outlined "
-            type="text"
-          />
-          <input
-            value="input medium secondary outlined"
-            className="input medium secondary outlined "
-            type="text"
-          />
-          <input
-            value="input large secondary outlined"
-            className="input large secondary outlined "
-            type="text"
-          />
-        </div>
-
-    )
+  return (
+    <div
+      id="#inputs"
+      style={{
+        // width: "60%",
+        display: "grid",
+        gridTemplateColumns: "1fr 1fr 1fr",
+        justifyContent: "center",
+        alignItems: "center",
+        gap: "1rem",
+        boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+        padding: "1rem",
+      }}
+    >
+      {inputElements}
+    </div>
+  );
 }

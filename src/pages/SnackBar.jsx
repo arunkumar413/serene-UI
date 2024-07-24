@@ -1,6 +1,16 @@
 import React from "react";
 
 export function SnackBar() {
+  const snackBarClasses = [
+    "ser-snackbar-success",
+    "ser-snackbar-warning",
+    "ser-snackbar-danger",
+  ];
+
+  const snackBarElements = snackBarClasses.map(function (item, index) {
+    return <span key={index.toString()} className={item}> {item}</span>;
+  });
+
   return (
     <div
       style={{
@@ -13,18 +23,8 @@ export function SnackBar() {
         padding: "1rem",
       }}
     >
-      <div>
-        <p> snack-bar error</p>
-        <span className="snack-bar error"> This is an error message</span>
-      </div>
-      <div>
-        <p> snack-bar warning</p>
-        <span className="snack-bar warning"> This is a warning message</span>
-      </div>
-      <div>
-        <p> snack-bar success</p>
-        <span className="snack-bar success"> This is a success message</span>
-      </div>
+
+      {snackBarElements}
     </div>
   );
 }

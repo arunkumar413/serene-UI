@@ -1,0 +1,8 @@
+button:hover::after {
+  display: block;
+  position: absolute;
+  content: attr(data-tooltip);
+  font-size: 10px;
+  background-color: green;
+  color: white;
+}

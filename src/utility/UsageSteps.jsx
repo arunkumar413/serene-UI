@@ -3,7 +3,7 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
 export function UsageSteps() {
   const listStyleType = {
-    listStyleType: "number",
+    // listStyleType: "number",
   };
 
   return (
