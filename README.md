@@ -1,8 +1,17 @@
-## Serene UI (https://serene-ui-git-experiment-arunkumar413.vercel.app/serene-ui/docs)
+## Serene UI ( https://serene-ui.vercel.app/ )
 
-A pure CSS library for composing HTML components. Works with any js library/framework. A UI made keeping mind the ease of use, easy learning curve.
+SereneUI is a pure CSS library for composing HTML components. Works with any js library/framework. A UI made keeping mind the ease of use, easy learning curve.
 
 Despite easy learning curve, CSS continue to take a lot of time in adjusting, previewing the components. This robs developers of their precious development time. This UI library simplifies composing the components just by adding CSS classes that are easy to learn.
+
+## Usage
+
+1) Include the normalize css file ( https://necolas.github.io/normalize.css/ ) in your project's `index.html` file to remove browsers inconsistencie in rendering the HTML elements.
+2) Copy the SereneUI CSS from from the `src/style.css` file of this repository.
+3) Create an `index.css` file in your project and paste the content copied in step 1.
+4) Include the `index.css` file in your project's HTML file as below.
+
+    ```<link rel="stylesheet" href="index.css"></link>``` 
 
 ### Philosophy
 
