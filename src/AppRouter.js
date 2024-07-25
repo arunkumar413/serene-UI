@@ -14,7 +14,7 @@ import { RadioButtons } from "./pages/RadioButtons";
 import { Range } from "./pages/Range";
 import { Colors } from "./pages/Colors";
 import { SnackBar } from "./pages/SnackBar";
-import { Accordian } from "./pages/accordians";
+import { Accordion } from "./pages/accordions";
 
 export const AppRouter = createBrowserRouter([
   {
@@ -80,8 +80,8 @@ export const AppRouter = createBrowserRouter([
         element: <SnackBar />,
       },
       {
-        path: "accordians",
-        element: <Accordian />,
+        path: "accordions",
+        element: <Accordion />,
       },
     ],
   },

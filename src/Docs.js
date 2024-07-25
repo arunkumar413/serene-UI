@@ -1,8 +1,5 @@
 import React, { Fragment, useEffect } from "react";
 import "./style.css";
-import SyntaxHighlighter from "react-syntax-highlighter";
-import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
-import { HashLink } from "react-router-hash-link";
 import { Buttons } from "./pages/buttons";
 import { Inputs } from "./pages/inputs";
 import { Sidebar } from "./pages/sidebar";
@@ -19,7 +16,7 @@ import { UsageSteps } from "./utility/UsageSteps";
 import { Headings } from "./pages/Headings";
 import { Paragraph } from "./pages/Paragraph";
 import { Steps } from "./pages/Steps";
-import { Accordian } from "./pages/accordians";
+import { Accordion } from "./pages/accordions";
 
 export default function Docs() {
   // function handleChange(evt) {
@@ -56,7 +53,7 @@ export default function Docs() {
     { name: "Range", page: <Range /> },
     { name: "Colors (apply on h1-h6 and paragraph tags)", page: <Colors /> },
     { name: "Snack bars", page: <SnackBar /> },
-    { name: "Accordians", page: <Accordian /> },
+    { name: "Accordions", page: <Accordion /> },
   ];
 
   const pageElements = pageList.map(function (item, index) {

@@ -1,9 +1,9 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 import AppStyles from "./AppStyles.css";
 
+
 export function Sidebar() {
-  const [hover, setHover] = useState(false);
   const links = [
     {
       name: "All",
@@ -58,8 +58,8 @@ export function Sidebar() {
       link: "/snack-bars",
     },
     {
-      name: "Accordians",
-      link: "/accordians",
+      name: "Accordions",
+      link: "/accordions",
     },
   ];
 
