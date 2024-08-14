@@ -711,3 +711,23 @@ details[open] > summary::after {
 /* summary::-webkit-details-marker {
   display: none;
 } */
+
+/* utilities */
+
+.ser-text-tiny {
+  font-size: 0.8rem;
+}
+
+.ser-text-small {
+  font-size: 1rem;
+}
+.ser-text-medium {
+  font-size: 1.3rem;
+}
+.ser-text-large {
+  font-size: 2rem;
+}
+
+.ser-text-xlarge {
+  font-size: 2.5rem;
+}

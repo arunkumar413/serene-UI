@@ -2,7 +2,6 @@ import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 import AppStyles from "./AppStyles.css";
 
-
 export function Sidebar() {
   const links = [
     {
@@ -60,6 +59,10 @@ export function Sidebar() {
     {
       name: "Accordions",
       link: "/accordions",
+    },
+    {
+      name: "Utilities",
+      link: "/utilities",
     },
   ];
 

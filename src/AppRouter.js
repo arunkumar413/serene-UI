@@ -15,6 +15,7 @@ import { Range } from "./pages/Range";
 import { Colors } from "./pages/Colors";
 import { SnackBar } from "./pages/SnackBar";
 import { Accordion } from "./pages/accordions";
+import { Utilities } from "./pages/Utilities";
 
 export const AppRouter = createBrowserRouter([
   {
@@ -82,6 +83,10 @@ export const AppRouter = createBrowserRouter([
       {
         path: "accordions",
         element: <Accordion />,
+      },
+      {
+        path: "utilities",
+        element: <Utilities />,
       },
     ],
   },
