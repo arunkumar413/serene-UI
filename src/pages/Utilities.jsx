@@ -25,6 +25,14 @@ export function Utilities() {
     "ser-bg-grey-5",
   ];
 
+  let shadowClasses = [
+    "ser-shadow-1",
+    "ser-shadow-2",
+    "ser-shadow-3",
+    "ser-shadow-4",
+    "ser-shadow-5",
+  ];
+
   const textElements = textClasses.map(function (item, index) {
     return (
       <p key={item} className={item}>
@@ -52,10 +60,28 @@ export function Utilities() {
     );
   });
 
+  const shadowElements = shadowClasses.map(function (item, index) {
+    return (
+      <div
+        className={item}
+        key={item}
+        style={{ width: 200, height: 100, textAlign: "center" }}
+      >
+        {item}
+      </div>
+    );
+  });
+
   return (
     <div
       style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px", padding: "1rem" }}
     >
+      <p>
+        {" "}
+        We're giving five levels of font-sizes, grey colors, grey background and
+        shadows. You can add more levels depending on your application
+        requirements.
+      </p>
       <h3> Font sizes:</h3>
       {textElements}
       <hr />
@@ -65,6 +91,11 @@ export function Utilities() {
       <hr />
       <h3> Grey background colors:</h3>
       <div style={{ display: "flex", gap: "1rem" }}>{greyBgElements}</div>
+      <hr />
+
+      <h3> Shadows:</h3>
+
+      <div style={{ display: "flex", gap: "1rem" }}>{shadowElements}</div>
     </div>
   );
 }
