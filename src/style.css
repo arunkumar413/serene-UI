@@ -25,6 +25,30 @@
   --round-radius: 0.5rem;
   --rounder-radius: 1rem;
   --roundest-radius: 1.2rem;
+
+  /* font sizes */
+
+  --font-size-tiny: 0.8rem;
+  --font-size-small: 1rem;
+  --font-size-medium: 1.3rem;
+  --font-size-large: 2rem;
+  --font-size-xlarge: 2.5rem;
+
+  /* Grey colors */
+
+  --color-grey-1: rgba(0, 0, 0, 0.1);
+  --color-grey-2: rgba(0, 0, 0, 0.2);
+  --color-grey-3: rgba(0, 0, 0, 0.3);
+  --color-grey-4: rgba(0, 0, 0, 0.4);
+  --color-grey-5: rgba(0, 0, 0, 0.5);
+
+  /* grey background colors */
+
+  --bg-color-grey-1: rgba(0, 0, 0, 0.1);
+  --bg-color-grey-2: rgba(0, 0, 0, 0.2);
+  --bg-color-grey-3: rgba(0, 0, 0, 0.3);
+  --bg-color-grey-4: rgba(0, 0, 0, 0.4);
+  --bg-color-grey-5: rgba(0, 0, 0, 0.5);
 }
 
 body {
@@ -715,19 +739,59 @@ details[open] > summary::after {
 /* utilities */
 
 .ser-text-tiny {
-  font-size: 0.8rem;
+  font-size: var(--font-size-tiny);
 }
 
 .ser-text-small {
-  font-size: 1rem;
+  font-size: var(--font-size-small);
 }
 .ser-text-medium {
-  font-size: 1.3rem;
+  font-size: var(--font-size-medium);
 }
 .ser-text-large {
-  font-size: 2rem;
+  font-size: var(--font-size-large);
 }
 
 .ser-text-xlarge {
-  font-size: 2.5rem;
+  font-size: var(--font-size-xlarge);
+}
+
+.ser-color-grey-1 {
+  color: var(--color-grey-1);
+}
+.ser-color-grey-2 {
+  color: var(--color-grey-2);
+}
+.ser-color-grey-3 {
+  color: var(--color-grey-3);
+}
+.ser-color-grey-4 {
+  color: var(--color-grey-4);
+}
+.ser-color-grey-5 {
+  color: var(--color-grey-5);
+}
+
+.ser-bg-grey-1 {
+  background-color: var(--bg-color-grey-1);
+}
+.ser-bg-grey-2 {
+  background-color: var(--bg-color-grey-2);
+}
+
+.ser-bg-grey-3 {
+  background-color: var(--bg-color-grey-3);
+}
+
+.ser-bg-grey-4 {
+  background-color: var(--bg-color-grey-4);
+}
+
+.ser-bg-grey-5 {
+  background-color: var(--bg-color-grey-5);
+}
+
+hr {
+  background-color: var(--bg-color-grey-2);
+  color: var(--color-grey-2);
 }
