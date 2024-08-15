@@ -70,7 +70,7 @@ export function Sidebar() {
     return (
       <Fragment key={index.toString()}>
         <li
-          style={{ padding: "1rem" }}
+          style={{ padding: "1rem", fontSize: "1.2rem" }}
           className="large round list-item primary-hover"
         >
           <Link
