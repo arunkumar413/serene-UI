@@ -18,6 +18,7 @@ import { Paragraph } from "./pages/Paragraph";
 import { Steps } from "./pages/Steps";
 import { Accordion } from "./pages/accordions";
 import { Utilities } from "./pages/Utilities";
+import { Select } from "./pages/Select";
 
 export default function Docs() {
   // function handleChange(evt) {
@@ -55,6 +56,7 @@ export default function Docs() {
     { name: "Colors (apply on h1-h6 and paragraph tags)", page: <Colors /> },
     { name: "Snack bars", page: <SnackBar /> },
     { name: "Accordions", page: <Accordion /> },
+    { name: "Select", page: <Select /> },
     { name: "Utilities", page: <Utilities /> },
   ];
 

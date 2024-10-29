@@ -61,6 +61,10 @@ export function Sidebar() {
       link: "/accordions",
     },
     {
+      name: "Select",
+      link: "/select",
+    },
+    {
       name: "Utilities",
       link: "/utilities",
     },

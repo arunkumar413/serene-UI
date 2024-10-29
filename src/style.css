@@ -738,6 +738,83 @@ details[open] > summary::after {
   display: none;
 } */
 
+/* Styles for Select */
+/* Base Select Style */
+.ser-select {
+  appearance: none; /* Remove default appearance */
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+/* Select with Specific Size and Color */
+.ser-select-primary-small {
+  background-color: var(--primary-color);
+  color: var(--text-primary);
+  font-size: var(--small-input-font-size);
+}
+
+.ser-select-primary-medium {
+  background-color: var(--primary-color);
+  color: var(--text-primary);
+  font-size: var(--medium-input-font-size); 
+}
+
+.ser-select-primary-large {
+  background-color: var(--primary-color);
+  color: var(--text-primary);
+  font-size: var(--large-input-font-size); 
+}
+
+.ser-select-secondary-small {
+  background-color: var(--secondary-color);
+  color: var(--text-primary);
+  font-size: var(--small-input-font-size);
+}
+
+.ser-select-secondary-medium {
+  background-color: var(--secondary-color);
+  color: var(--text-primary);
+  font-size: var(--medium-input-font-size); 
+}
+
+.ser-select-secondary-large {
+  background-color: var(--secondary-color);
+  color: var(--text-primary);
+  font-size: var(--large-input-font-size); 
+}
+
+/* Select with Dropdown Arrow */
+.ser-select-arrow {
+  appearance: none; /* Remove default appearance */
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 0.5rem;
+  font-size: var(--small-input-font-size);
+  cursor: pointer;
+  background-image: url(assets/images/arrow-down.svg); /* Replace with your arrow icon */
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+  padding-right: 20px;
+}
+
+.ser-select-round {
+  appearance: none;
+  border: 1px solid var(--border-color);
+  border-radius: var(--round-radius);
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+/* Select with Hover and Focus Effects */
+select:hover,
+select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 2px var(--primary-color);
+}
+
 /* utilities */
 
 .ser-text-tiny {
