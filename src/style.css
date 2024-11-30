@@ -824,3 +824,32 @@ hr {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
+
+table {
+  border: solid 0.5px var(--bg-color-grey-1);
+  padding: 0.2rem;
+  border-collapse: collapse;
+}
+
+.ser-table-heading-row-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.ser-table-heading-row-secondary {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+td,
+th {
+  padding: 0.5rem;
+  text-align: left;
+  border: solid 0.5px var(--bg-color-grey-1);
+}
+
+tr:nth-child(even) {
+  background-color: var(--bg-color-grey-1);
+}
