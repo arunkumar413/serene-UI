@@ -33,6 +33,36 @@ export function Utilities() {
     "ser-shadow-5",
   ];
 
+  let paddingClasses = [
+    "ser-p-1",
+    "ser-p-2",
+    "ser-p-3",
+    "ser-p-4",
+    "ser-p-5",
+    "ser-p-6",
+    "ser-p-7",
+    "ser-p-8",
+    "ser-p-9",
+    "ser-p-10",
+    "ser-p-11",
+    "ser-p-12",
+  ];
+
+  let marginClasses = [
+    "ser-m-1",
+    "ser-m-2",
+    "ser-m-3",
+    "ser-m-4",
+    "ser-m-5",
+    "ser-m-6",
+    "ser-m-7",
+    "ser-m-8",
+    "ser-m-9",
+    "ser-m-10",
+    "ser-m-11",
+    "ser-m-12",
+  ];
+
   const textElements = textClasses.map(function (item, index) {
     return (
       <p key={item} className={item}>
@@ -72,6 +102,32 @@ export function Utilities() {
     );
   });
 
+  const paddingElements = paddingClasses.map(function (item, index) {
+    return (
+      <span
+        className={`${item} ser-shadow-1`}
+        key={item}
+        // style={{ width: 200, height: 100 }}
+        style={{ marginLeft: "1rem" }}
+      >
+        {item}
+      </span>
+    );
+  });
+
+  const marginElements = marginClasses.map(function (item, index) {
+    return (
+      <span
+        className={`${item} ser-shadow-1`}
+        key={item}
+        // style={{ width: 200, height: 100 }}
+        // style={{ marginLeft: "1rem" }}
+      >
+        {item}
+      </span>
+    );
+  });
+
   return (
     <div
       style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px", padding: "1rem" }}
@@ -82,20 +138,29 @@ export function Utilities() {
         shadows. You can add more levels depending on your application
         requirements.
       </p>
+
       <h3> Font sizes:</h3>
       {textElements}
       <hr />
-      <h3> Grey colors:</h3>
 
+      <h3> Grey colors:</h3>
       {greyElements}
       <hr />
+
       <h3> Grey background colors:</h3>
       <div style={{ display: "flex", gap: "1rem" }}>{greyBgElements}</div>
       <hr />
 
       <h3> Shadows:</h3>
-
       <div style={{ display: "flex", gap: "1rem" }}>{shadowElements}</div>
+      <hr />
+
+      <h3> Paddings:</h3>
+      <div>{paddingElements}</div>
+
+      <h3> Margins:</h3>
+      <div>{marginElements}</div>
+      <hr />
     </div>
   );
 }
