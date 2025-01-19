@@ -1,0 +1,104 @@
+/* accordion styles */
+
+details.accordion-primary-small,
+details.accordion-primary-medium,
+details.accordion-primary-large {
+  /* border: solid 1px lightgray; */
+  background-color: aliceblue;
+}
+
+details.accordion-primary-small > summary,
+details.accordion-secondary-small > summary {
+  /* padding: 0.5rem; */
+  font-size: 0.8rem;
+}
+
+details.accordion-primary-medium > summary,
+details.accordion-secondary-medium > summary {
+  /* padding: 1rem; */
+  font-size: 1rem;
+}
+
+details.accordion-primary-large > summary,
+details.accordion-secondary-large > summary {
+  /* padding: 1.5rem; */
+  font-size: 1.5rem;
+}
+
+details.accordion-secondary-small,
+details.accordion-secondary-medium,
+details.accordion-secondary-large {
+  /* border: solid 1px lightgray; */
+  background-color: aliceblue;
+}
+
+/* details div {
+  padding: 10px;
+} */
+
+.accordion-primary-small > summary,
+.accordion-primary-medium > summary,
+.accordion-primary-large > summary {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px;
+  /*   list-style: none;
+   */
+  /*   background: url(arrow.svg) no-repeat 14px 50%;
+   */
+  background-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-secondary-small > summary,
+.accordion-secondary-medium > summary,
+.accordion-secondary-large > summary {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 10px;
+  /*   list-style: none;
+   */
+  /*   background: url(arrow.svg) no-repeat 14px 50%;
+   */
+  background-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+summary::marker {
+  color: red;
+  font-size: 1.2em;
+  list-style-position: outside;
+  /*   margin-left: 30px;
+  padding: 10px 10px 10px 20px;
+  border-radius: 5px; */
+}
+
+summary::after {
+  content: "+";
+  /*   width: 18px;
+  height: 10px; */
+  background-size: cover;
+  margin-left: 0.75em;
+  transition: 1s;
+}
+
+details[open] > summary::after {
+  /*   transform: rotate(135deg);
+   */
+  content: "-";
+  transition: 1s;
+}
+
+/* summary::-webkit-details-marker {
+  display: none;
+} */
+
+details :nth-child(2) {
+  padding: 10px;
+}

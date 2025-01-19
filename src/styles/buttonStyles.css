@@ -1,0 +1,173 @@
+/* common button styles */
+.ser-btn-primary-small,
+.ser-btn-primary-medium,
+.ser-btn-primary-large,
+.ser-btn-secondary-small,
+.ser-btn-secondary-medium,
+.ser-btn-secondary-large,
+.ser-btn-danger-small,
+.ser-btn-danger-medium,
+.ser-btn-danger-large,
+.ser-btn-warning-small,
+.ser-btn-warning-medium,
+.ser-btn-warning-large,
+.ser-btn-success-small,
+.ser-btn-success-medium,
+.ser-btn-success-large,
+.ser-btn-disabled-small,
+.ser-btn-disabled-medium,
+.ser-btn-disabled-large,
+.ser-btn-primary-small-outlined,
+.ser-btn-primary-medium-outlined,
+.ser-btn-primary-large-outlined,
+.ser-btn-secondary-small-outlined,
+.ser-btn-secondary-medium-outlined,
+.ser-btn-secondary-large-outlined,
+.ser-btn-error-small-outlined,
+.ser-btn-error-medium-outlined,
+.ser-btn-error-large-outlined,
+.ser-btn-warning-small-outlined,
+.ser-btn-warning-medium-outlined,
+.ser-btn-warning-large-outlined,
+.ser-btn-success-small-outlined,
+.ser-btn-success-medium-outlined,
+.ser-btn-success-large-outlined {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* common button small size styles */
+
+.ser-btn-primary-small,
+.ser-btn-secondary-small,
+.ser-btn-primary-small-outlined,
+.ser-btn-secondary-small-outlined,
+.ser-btn-danger-small,
+.ser-btn-warning-small,
+.ser-btn-success-small,
+.ser-btn-disabled-small,
+.ser-btn-error-small-outlined,
+.ser-btn-warning-small-outlined,
+.ser-btn-success-small-outlined {
+  font-size: var(--btn-small-font-size);
+  padding: var(--spacing-4);
+}
+
+.ser-btn-primary-medium,
+.ser-btn-secondary-medium,
+.ser-btn-primary-medium-outlined,
+.ser-btn-secondary-medium-outlined,
+.ser-btn-danger-medium,
+.ser-btn-warning-medium,
+.ser-btn-success-medium,
+.ser-btn-disabled-medium,
+.ser-btn-error-medium-outlined,
+.ser-btn-warning-medium-outlined,
+.ser-btn-success-medium-outlined {
+  font-size: var(--btn-medium-font-size);
+  padding: var(--spacing-6);
+}
+
+/* common button large size styles */
+
+.ser-btn-primary-large,
+.ser-btn-secondary-large,
+.ser-btn-primary-large-outlined,
+.ser-btn-secondary-large-outlined,
+.ser-btn-danger-large,
+.ser-btn-warning-large,
+.ser-btn-success-large,
+.ser-btn-disabled-large,
+.ser-btn-error-large-outlined,
+.ser-btn-warning-large-outlined,
+.ser-btn-success-large-outlined {
+  font-size: var(--btn-large-font-size);
+  padding: var(--spacing-8);
+}
+
+/* primary common button color styles */
+
+.ser-btn-primary-small,
+.ser-btn-primary-medium,
+.ser-btn-primary-large {
+  color: var(--btn-primary-font-color);
+  background-color: var(--primary-color);
+}
+
+/* secondary common button color styles */
+
+.ser-btn-secondary-small,
+.ser-btn-secondary-medium,
+.ser-btn-secondary-large {
+  color: var(--btn-secondary-font-color);
+  background-color: var(--secondary-color);
+}
+
+.ser-btn-primary-small-outlined,
+.ser-btn-primary-medium-outlined,
+.ser-btn-primary-large-outlined {
+  border: solid 1px var(--primary-color);
+  background-color: white;
+  color: var(--primary-color);
+}
+
+.ser-btn-secondary-small-outlined,
+.ser-btn-secondary-medium-outlined,
+.ser-btn-secondary-large-outlined {
+  border: solid 1px var(--secondary-color);
+  background-color: white;
+  color: var(--secondary-color);
+}
+
+.ser-btn-danger-small,
+.ser-btn-danger-medium,
+.ser-btn-danger-large {
+  background-color: var(--danger-color);
+  color: white;
+}
+
+.ser-btn-warning-small,
+.ser-btn-warning-medium,
+.ser-btn-warning-large {
+  background-color: var(--warning-color);
+  color: black;
+}
+
+.ser-btn-success-small,
+.ser-btn-success-medium,
+.ser-btn-success-large {
+  background-color: var(--success-color);
+  color: white;
+}
+
+.ser-btn-disabled-small,
+.ser-btn-disabled-medium,
+.ser-btn-disabled-large {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.ser-btn-error-small-outlined,
+.ser-btn-error-medium-outlined,
+.ser-btn-error-large-outlined {
+  border: solid 1px var(--danger-color);
+  background-color: white;
+  color: var(--danger-color);
+}
+
+.ser-btn-warning-small-outlined,
+.ser-btn-warning-medium-outlined,
+.ser-btn-warning-large-outlined {
+  border: solid 1px var(--warning-color);
+  background-color: white;
+  color: var(--warning-color);
+}
+
+.ser-btn-success-small-outlined,
+.ser-btn-success-medium-outlined,
+.ser-btn-success-large-outlined {
+  border: solid 1px var(--success-color);
+  background-color: white;
+  color: var(--success-color);
+}
