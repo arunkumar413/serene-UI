@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
-import AppStyles from "./AppStyles.css";
+// import AppStyles from "./AppStyles.css";
 
 export function Sidebar() {
   const links = [
