@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 
 export function CheckBoxes() {
   const checkboxColors = [
@@ -7,7 +7,7 @@ export function CheckBoxes() {
     "ser-checkbox-primary-large",
     "ser-checkbox-secondary-small",
     "ser-checkbox-secondary-medium",
-    "ser-checkbox-secondary-large"
+    "ser-checkbox-secondary-large",
   ];
 
   const checkboxElements = checkboxColors.map(function (item, index) {
