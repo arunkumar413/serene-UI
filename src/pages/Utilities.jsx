@@ -44,8 +44,6 @@ export function Utilities() {
     "ser-p-8",
     "ser-p-9",
     "ser-p-10",
-    "ser-p-11",
-    "ser-p-12",
   ];
 
   let marginClasses = [
@@ -59,8 +57,6 @@ export function Utilities() {
     "ser-m-8",
     "ser-m-9",
     "ser-m-10",
-    "ser-m-11",
-    "ser-m-12",
   ];
 
   const textElements = textClasses.map(function (item, index) {
@@ -156,7 +152,16 @@ export function Utilities() {
       <hr />
 
       <h3> Paddings:</h3>
-      <div>{paddingElements}</div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "flex-start",
+          alignItems: "center",
+        }}
+      >
+        {paddingElements}
+      </div>
+      <hr />
 
       <h3> Margins:</h3>
       <div>{marginElements}</div>

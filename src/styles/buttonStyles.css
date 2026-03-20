@@ -51,7 +51,7 @@
 .ser-btn-warning-small-outlined,
 .ser-btn-success-small-outlined {
   font-size: var(--btn-small-font-size);
-  padding: var(--spacing-4);
+  padding: var(--spacing-2);
 }
 
 .ser-btn-primary-medium,
@@ -66,7 +66,7 @@
 .ser-btn-warning-medium-outlined,
 .ser-btn-success-medium-outlined {
   font-size: var(--btn-medium-font-size);
-  padding: var(--spacing-6);
+  padding: var(--spacing-3);
 }
 
 /* common button large size styles */
@@ -83,7 +83,7 @@
 .ser-btn-warning-large-outlined,
 .ser-btn-success-large-outlined {
   font-size: var(--btn-large-font-size);
-  padding: var(--spacing-8);
+  padding: var(--spacing-4);
 }
 
 /* primary common button color styles */
