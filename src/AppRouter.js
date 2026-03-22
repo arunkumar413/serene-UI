@@ -17,6 +17,7 @@ import { SnackBar } from "./pages/SnackBar";
 import { Accordion } from "./pages/accordions";
 import { Utilities } from "./pages/Utilities";
 import { Table } from "./pages/Table";
+import { Links } from "./pages/Links";
 
 export const AppRouter = createBrowserRouter([
   {
@@ -72,6 +73,11 @@ export const AppRouter = createBrowserRouter([
       {
         path: "range-selector",
         element: <Range />,
+      },
+
+      {
+        path: "links",
+        element: <Links />,
       },
       {
         path: "serene-colors",

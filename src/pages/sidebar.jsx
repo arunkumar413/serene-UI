@@ -49,6 +49,10 @@ export function Sidebar() {
       link: "/range-selector",
     },
     {
+      name: "Links",
+      link: "/links",
+    },
+    {
       name: "Colors",
       link: "/serene-colors",
     },

@@ -9,6 +9,14 @@ export function Utilities() {
     "ser-text-xlarge",
   ];
 
+  let textClasses2 = [
+    "ser-text-size-1",
+    "ser-text-size-2",
+    "ser-text-size-3",
+    "ser-text-size-4",
+    "ser-text-size-5",
+  ];
+
   let greyClasses = [
     "ser-color-grey-1",
     "ser-color-grey-2",
@@ -60,6 +68,14 @@ export function Utilities() {
   ];
 
   const textElements = textClasses.map(function (item, index) {
+    return (
+      <p key={item} className={item}>
+        {item}
+      </p>
+    );
+  });
+
+  const textElements2 = textClasses2.map(function (item, index) {
     return (
       <p key={item} className={item}>
         {item}
@@ -136,7 +152,22 @@ export function Utilities() {
       </p>
 
       <h3> Font sizes:</h3>
-      {textElements}
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          gap: "2rem",
+        }}
+      >
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          {textElements}
+        </div>
+
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          {textElements2}
+        </div>
+      </div>
+
       <hr />
 
       <h3> Grey colors:</h3>

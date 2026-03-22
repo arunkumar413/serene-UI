@@ -1,0 +1,83 @@
+a {
+    text-underline-offset: 5px;
+}
+
+.ser-link-primary {
+    color: var(--primary-color);
+}
+
+.ser-link-secondary {
+    color: var(--secondary-color);
+}
+
+.ser-link-btn-primary-small {
+    color: var(--primary-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: var(--btn-small-font-size);
+    padding: var(--spacing-2);
+    color: var(--btn-primary-font-color);
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.ser-link-btn-primary-medium {
+    color: var(--primary-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: var(--btn-medium-font-size);
+    padding: var(--spacing-3);
+    color: var(--btn-primary-font-color);
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.ser-link-btn-primary-large {
+    color: var(--primary-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: var(--btn-large-font-size);
+    padding: var(--spacing-4);
+    color: var(--btn-primary-font-color);
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.ser-link-btn-secondary-small {
+    color: var(--secondary-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: var(--btn-small-font-size);
+    padding: var(--spacing-2);
+    color: var(--btn-secondary-font-color);
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+.ser-link-btn-secondary-medium {
+    color: var(--secondary-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: var(--btn-medium-font-size);
+    padding: var(--spacing-3);
+    color: var(--btn-secondary-font-color);
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+.ser-link-btn-secondary-large {
+    color: var(--secondary-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: var(--btn-large-font-size);
+    padding: var(--spacing-4);
+    color: var(--btn-secondary-font-color);
+    background-color: var(--secondary-color);
+    text-align: center;
+}

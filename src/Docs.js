@@ -19,6 +19,7 @@ import { Steps } from "./pages/Steps";
 import { Accordion } from "./pages/accordions";
 import { Utilities } from "./pages/Utilities";
 import { Table } from "./pages/Table";
+import { Links } from "./pages/Links";
 
 export default function Docs() {
   // function handleChange(evt) {
@@ -53,6 +54,7 @@ export default function Docs() {
 
     { name: "Radio buttons", page: <RadioButtons /> },
     { name: "Range", page: <Range /> },
+    { name: "Links", page: <Links /> },
     { name: "Colors (apply on h1-h6 and paragraph tags)", page: <Colors /> },
     { name: "Snack bars", page: <SnackBar /> },
     { name: "Accordions", page: <Accordion /> },
