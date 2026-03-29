@@ -4,10 +4,16 @@ export function Steps() {
   return (
     <div>
       <ol>
-        <li> Include normalise <a href="https://necolas.github.io/normalize.css/"> CSS file </a> in you project's index.html file to remove browser inconsistencies in rendering the HTML elements. </li>
         <li>
-          Copy the serene UI CSS content from{" "}
-          <a href="https://github.com/arunkumar413/serene-UI/blob/experiment/src/style.css">
+          {" "}
+          Include normalise{" "}
+          <a href="https://necolas.github.io/normalize.css/"> CSS file </a> in
+          you project's index.html file to remove browser inconsistencies in
+          rendering the HTML elements.{" "}
+        </li>
+        <li>
+          Copy the serene UI styles directory from{" "}
+          <a href="https://github.com/arunkumar413/serene-UI/tree/main/public">
             {" "}
             here
           </a>

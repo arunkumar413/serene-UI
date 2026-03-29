@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect } from "react";
-import "./style.css";
+// import "./style.css";
 import { Buttons } from "./pages/buttons";
 import { Inputs } from "./pages/inputs";
 import { Sidebar } from "./pages/sidebar";

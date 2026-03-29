@@ -9,7 +9,7 @@ export function UsageSteps() {
   return (
     <ol>
       <li style={listStyleType}>
-        Copy the serene UI CSS content from{" "}
+        Copy the styles directory from{" "}
         <a href="https://github.com/arunkumar413/serene-UI/blob/main/src/style.css">
           {" "}
           here

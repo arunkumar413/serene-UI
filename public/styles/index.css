@@ -1,9 +1,8 @@
-@import "./styles/buttonStyles.css"; /* Using a string */
-
-@import "./styles/inputStyles.css"; /* Using a string */
-@import "./styles/utilities.css"; /* Using a string */
-@import "./styles/accordionStyles.css"; /* Using a string */
-@import "./styles/linkStyles.css"; /* Using a string */
+@import "buttonStyles.css";
+@import "inputStyles.css";
+@import "utilities.css";
+@import "accordionStyles.css";
+@import "linkStyles.css";
 
 :root {
     --primary-color: blue;
