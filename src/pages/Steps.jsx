@@ -12,14 +12,22 @@ export function Steps() {
           rendering the HTML elements.{" "}
         </li>
         <li>
-          Copy the serene UI styles directory from{" "}
-          <a href="https://github.com/arunkumar413/serene-UI/tree/main/public">
+          Copy the bundled/minified CSS styles from the bundle.css file at
+          <a
+            href="https://github.com/arunkumar413/serene-UI/blob/main/public/styles/bundle.css"
+            target="_blank"
+            rel="noreferrer"
+          >
             {" "}
-            here
+            https://github.com/arunkumar413/serene-UI/blob/main/public/styles/bundle.css
           </a>
         </li>
-        <li> Create file named index.css or name it as per your choice. </li>
-        <li> Paste the CSS content into index.css and save it.</li>
+        <li>
+          {" "}
+          In your project create file named index.css or name it as per your
+          choice.{" "}
+        </li>
+        <li> Paste the bundle.css content into index.css and save it.</li>
         <li> Link the index.css file in your HTML webpage.</li>
         <pre>
           <code className="language-html">
