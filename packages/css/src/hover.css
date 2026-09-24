@@ -1,0 +1,7 @@
+.ser-primary-hover:hover {
+  background-color: var(--primary-hover-background);
+}
+
+.ser-secondary-hover:hover {
+  background-color: var(--secondary-hover-background);
+}

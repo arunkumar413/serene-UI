@@ -1,0 +1,34 @@
+{
+  "name": "serene-ui",
+  "version": "2.0.0",
+  "description": "A class-based CSS library for composing HTML components",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arunkumar413/serene-UI.git",
+    "directory": "packages/css"
+  },
+  "style": "dist/serene.min.css",
+  "main": "dist/serene.min.css",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "exports": {
+    ".": "./dist/serene.min.css",
+    "./serene.css": "./dist/serene.css",
+    "./serene.min.css": "./dist/serene.min.css"
+  },
+  "scripts": {
+    "build": "npm run build:css && npm run build:min",
+    "build:css": "postcss src/serene.css -o dist/serene.css",
+    "build:min": "postcss src/serene.css -o dist/serene.min.css --env production",
+    "watch": "postcss src/serene.css -o dist/serene.css --watch"
+  },
+  "devDependencies": {
+    "cssnano": "^7.1.3",
+    "postcss": "^8.5.8",
+    "postcss-cli": "^11.0.1",
+    "postcss-import": "^16.1.1"
+  }
+}

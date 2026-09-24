@@ -1,0 +1,17 @@
+.ser-snackbar-success {
+  background-color: var(--success-color);
+  padding: 0.8rem;
+  color: white;
+}
+
+.ser-snackbar-warning {
+  background-color: var(--warning-color);
+  padding: 0.8rem;
+  color: white;
+}
+
+.ser-snackbar-danger {
+  background-color: var(--danger-color);
+  padding: 0.8rem;
+  color: white;
+}

@@ -1,0 +1,57 @@
+:root {
+  --primary-color: blue;
+  --secondary-color: rgba(184, 11, 117, 0.959);
+  --text-primary: white;
+  --btn-font-size: 1rem;
+  --btn-small-font-size: 1rem;
+  --btn-medium-font-size: 1.2rem;
+  --btn-large-font-size: 1.4rem;
+  --btn-primary-font-color: white;
+  --btn-secondary-font-color: white;
+  --small-input-font-size: 1rem;
+  --medium-input-font-size: 1.2rem;
+  --large-input-font-size: 1.6rem;
+  --danger-color: red;
+  --warning-color: orange;
+  --success-color: green;
+  --paragraph-font-size: 1rem;
+  --h1-font-size: 2rem;
+  --primary-hover-background: aliceblue;
+  --secondary-hover-background: #ffc0cb33;
+  --small-button-padding: 0.5rem;
+  --medium-button-padding: 0.8rem;
+  --large-button-padding: 1rem;
+
+  --round-radius: 0.5rem;
+  --rounder-radius: 1rem;
+  --roundest-radius: 1.2rem;
+
+  --font-size-tiny: 0.8rem;
+  --font-size-small: 1rem;
+  --font-size-medium: 1.3rem;
+  --font-size-large: 2rem;
+  --font-size-xlarge: 2.5rem;
+
+  --color-grey-1: rgba(0, 0, 0, 0.1);
+  --color-grey-2: rgba(0, 0, 0, 0.2);
+  --color-grey-3: rgba(0, 0, 0, 0.3);
+  --color-grey-4: rgba(0, 0, 0, 0.4);
+  --color-grey-5: rgba(0, 0, 0, 0.5);
+
+  --bg-color-grey-1: rgba(0, 0, 0, 0.1);
+  --bg-color-grey-2: rgba(0, 0, 0, 0.2);
+  --bg-color-grey-3: rgba(0, 0, 0, 0.3);
+  --bg-color-grey-4: rgba(0, 0, 0, 0.4);
+  --bg-color-grey-5: rgba(0, 0, 0, 0.5);
+
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 24px;
+  --spacing-6: 32px;
+  --spacing-7: 40px;
+  --spacing-8: 48px;
+  --spacing-9: 64px;
+  --spacing-10: 80px;
+}

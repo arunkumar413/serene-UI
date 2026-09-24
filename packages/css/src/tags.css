@@ -1,0 +1,23 @@
+.ser-tag-primary-filled {
+  background-color: var(--primary-color);
+  color: var(--btn-primary-font-color);
+  border: none;
+}
+
+.ser-tag-primary-outlined {
+  border: solid 1px var(--primary-color);
+  color: var(--primary-color);
+  background-color: white;
+}
+
+.ser-tag-secondary-filled {
+  background-color: var(--secondary-color);
+  color: var(--btn-secondary-font-color);
+  border: none;
+}
+
+.ser-tag-secondary-outlined {
+  border: solid 1px var(--secondary-color);
+  background-color: white;
+  color: var(--secondary-color);
+}

@@ -1,0 +1,35 @@
+.hero {
+  padding: 1rem;
+  background-image: linear-gradient(to top, #209cff 0%, #68e0cf 100%);
+  color: white;
+  text-align: center;
+  display: grid;
+  min-height: calc(100vh - 60px);
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  color: white;
+}
+
+.lead {
+  text-align: center;
+  width: min(40rem, 100%);
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.actions a {
+  text-decoration: none;
+}

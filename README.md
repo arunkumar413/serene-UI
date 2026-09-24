@@ -1,102 +1,47 @@
-## Serene UI ( https://serene-ui.vercel.app/ )
+## Serene UI
 
-SereneUI is a pure CSS library for composing HTML components. Works with any js library/framework. A UI made keeping mind the ease of use, easy learning curve.
+Serene UI is a pure CSS library for composing HTML components. It works with any JavaScript framework. Docs: [https://serene-ui.vercel.app/](https://serene-ui.vercel.app/)
 
-Despite easy learning curve, CSS continue to take a lot of time in adjusting, previewing the components. This robs developers of their precious development time. This UI library simplifies composing the components just by adding CSS classes that are easy to learn.
+This repository has two parts:
 
-## Usage
+| Path | Purpose |
+| --- | --- |
+| `packages/css` | Source and built CSS published as `serene-ui` |
+| `website` | Docusaurus documentation |
 
-1) Include the normalize css file ( https://necolas.github.io/normalize.css/ ) in your project's `index.html` file to remove browsers inconsistencie in rendering the HTML elements.
-2) Copy the SereneUI CSS from from the `src/style.css` file of this repository.
-3) Create an `index.css` file in your project and paste the content copied in step 1.
-4) Include the `index.css` file in your project's HTML file as below.
+## Use the library
 
-    ```<link rel="stylesheet" href="index.css"></link>``` 
+CDN (jsDelivr, after npm publish):
 
-### Philosophy
-
-Serene UI tries to apply the CSS classes at the HTML elements only. Take for example, a button component.
-Serene UI classes are applied at the button tag and user is free to implement their own button group component using CSS grid or flexbox layout in their own favorite framwork such as react, angular etc,. Thus serene UI is framework agnostic.
-
-The main aim of serene UI is to address the default behvaior of the design system at the HTML tag level. User should be able to alter the design system just by modifying the below css variables.
-
-```
-:root {
-  --primary-color: blue;
-  --secondary-color: rgba(184, 11, 117, 0.959);
-  --text-primary: white;
-  --btn-font-size: 1rem;
-  --btn-small-font-size: 1rem;
-  --btn-medium-font-size: 1.2rem;
-  --btn-large-font-size: 1.4rem;
-  --btn-primary-font-color: white;
-  --btn-secondary-font-color: white;
-  --small-input-font-size: 1rem;
-  --medium-input-font-size: 1.2rem;
-  --large-input-font-size: 1.6rem;
-  --danger-color: red;
-  --warning-color: orange;
-  --success-color: green;
-  --paragraph-font-size: 1rem;
-  --h1-font-size: 2rem;
-  --primary-hover-background: aliceblue; /*background color to use when hovering over a primary class element */
-  --secondary-hover-background: #ffc0cb33; /* background color to use when hovering over a secondary class element */
-  --small-button-padding: 0.5rem;
-  --medium-button-padding: 0.8rem;
-  --large-button-padding: 1rem;
-
-  --round-radius: 0.5rem;
-  --rounder-radius: 1rem;
-  --roundest-radius: 1.2rem;
-}
-
-body {
-  font-family: "Inter", sans-serif;
-}
-
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/serene-ui@2/dist/serene.min.css" />
 ```
 
-screenshot:
+npm:
 
-![css library](/public/ser-ui-ver2.png)
-
-In version 2 we have added the `ser` prefix to the class names so that serene UI class names do not conflict with other css library class names. Also in version 2 a single class will be used to achieve the same functinality compared to the multiple classes in version 1.
-
-1. version 1: `<button class='btn primary small> Save </button>`
-2. version 2: `<button class='ser-btn-primary-small> Save </button>`
-
-Advantages of version 2:
-
-1. Single class name to achieve the desired functionality
-2. No conflict with other CSS libraries as each class name is prefixed with the key word `ser`
-3. IDE friendly as the editor will suggest the class names as you type.
-4. Uses logical grouping in which multiple classs names are grouped based on the css property we target.
-5. For example in the below snippet all button class names contianing the key word `small` are grouped together and the property `font-size` and `padding` are applied.
-
-```
-.ser-btn-primary-small,
-.ser-btn-secondary-small,
-.ser-btn-primary-small-outlined,
-.ser-btn-secondary-small-outlined,
-.ser-btn-danger-small,
-.ser-btn-warning-small,
-.ser-btn-success-small,
-.ser-btn-disabled-small,
-.ser-btn-error-small-outlined,
-.ser-btn-warning-small-outlined,
-.ser-btn-success-small-outlined {
-  font-size: var(--btn-small-font-size);
-  padding: var(--small-button-padding);
-}
+```bash
+npm install serene-ui
 ```
 
-6. Similarly, primary color buttons irrespective of their sizes are grouped together and primary color is applied
+```html
+<button class="ser-btn-primary-small">Submit</button>
+```
 
+Version 2 uses one `ser-` prefixed class per component so names do not clash with other libraries.
+
+## Develop this repo
+
+```bash
+npm install
+npm start
 ```
-.ser-btn-primary-small,
-.ser-btn-primary-medium,
-.ser-btn-primary-large {
-  color: var(--btn-primary-font-color);
-  background-color: var(--primary-color);
-}
+
+That builds the CSS bundle, then starts the docs site.
+
+```bash
+npm run build:css   # packages/css/dist/serene.css and serene.min.css
+npm run build       # CSS + static docs site in website/build
 ```
+
+Override theme tokens in `:root`. See the [theming docs](https://serene-ui.vercel.app/docs/theming) and `packages/css/src/tokens.css`.
