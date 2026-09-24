@@ -54,6 +54,26 @@
   --spacing-8: 48px;
   --spacing-9: 64px;
   --spacing-10: 80px;
+
+
+/* font sizes */
+  --fs-1-p3: clamp(4rem, 2.5rem + 6vw, 7rem);
+  --fs-1-p2: clamp(3.5rem, 2.25rem + 5vw, 6rem);
+  --fs-1-p1: clamp(3rem, 2rem + 4vw, 5rem);
+
+  --fs-1: clamp(2.25rem, 1.5rem + 3vw, 3.5rem);
+  --fs-2: clamp(1.875rem, 1.35rem + 2vw, 3rem);
+  --fs-3: clamp(1.5rem, 1.2rem + 1.5vw, 2.25rem);
+  --fs-4: clamp(1.25rem, 1.05rem + 1vw, 1.75rem);
+  --fs-5: clamp(1.125rem, 1rem + 0.6vw, 1.5rem);
+  --fs-6: clamp(1rem, 0.95rem + 0.35vw, 1.25rem);
+
+  --fs-6-m1: clamp(0.9375rem, 0.9rem + 0.25vw, 1.125rem);
+  --fs-6-m2: clamp(0.875rem, 0.85rem + 0.2vw, 1rem);
+  --fs-6-m3: clamp(0.8125rem, 0.8rem + 0.15vw, 0.9375rem);
+  --fs-6-m4: clamp(0.75rem, 0.74rem + 0.1vw, 0.875rem);
+  --fs-6-m5: 0.75rem;
+  --fs-6-m6: 0.6875rem;
 }
 /* common button styles */
 .ser-btn-primary-small,
@@ -1117,4 +1137,47 @@ hr {
 
 .ser-text-color-success {
     color: var(--success-color);
+}
+h1,.ser-h1 {
+font-size: var(--fs-1);
+}
+
+h2,.ser-h2 {
+font-size: var(--fs-2);
+}
+
+h3,.ser-h3 {
+font-size: var(--fs-3);
+}
+
+h4,.ser-h4 {
+font-size: var(--fs-4);
+}
+
+h5,.ser-h5 {
+    font-size: var(--fs-5);
+}
+
+h6,.ser-h6 {
+    font-size: var(--fs-6);
+}
+
+
+.ser-h1-p3 {
+    font-size: var(--fs-1-p3);
+}
+
+.ser-h1-p2 {
+    font-size: var(--fs-1-p2);
+}
+
+.ser-h1-p1 {    
+    font-size: var(--fs-1-p1);
+}
+
+
+.ser-paragraph {
+    font-size: var(--fs-6-m1);
+    line-height: 1.5;
+    font-weight: 400;
 }

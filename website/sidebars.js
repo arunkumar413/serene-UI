@@ -11,7 +11,7 @@ const sidebars = {
       items: [
         'components/buttons',
         'components/inputs',
-        'components/headings',
+        'components/typography',
         'components/paragraph',
         'components/border-radius',
         'components/tags',
