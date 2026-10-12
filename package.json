@@ -6,8 +6,8 @@
     "website"
   ],
   "scripts": {
-    "build:css": "npm run build -w serene-ui",
-    "watch:css": "npm run watch -w serene-ui",
+    "build:css": "npm run build -w serene-css",
+    "watch:css": "npm run watch -w serene-css",
     "start": "npm run build:css && npm run start -w website",
     "build": "npm run build:css && npm run build -w website",
     "build:docs": "npm run build -w website"

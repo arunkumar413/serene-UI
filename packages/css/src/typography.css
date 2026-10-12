@@ -1,24 +1,24 @@
-h1,.ser-h1 {
+.ser-h1 {
 font-size: var(--fs-1);
 }
 
-h2,.ser-h2 {
+.ser-h2 {
 font-size: var(--fs-2);
 }
 
-h3,.ser-h3 {
+.ser-h3 {
 font-size: var(--fs-3);
 }
 
-h4,.ser-h4 {
+.ser-h4 {
 font-size: var(--fs-4);
 }
 
-h5,.ser-h5 {
+.ser-h5 {
     font-size: var(--fs-5);
 }
 
-h6,.ser-h6 {
+.ser-h6 {
     font-size: var(--fs-6);
 }
 

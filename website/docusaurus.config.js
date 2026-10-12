@@ -1,9 +1,8 @@
 // @ts-check
-import path from 'path';
-import {fileURLToPath} from 'url';
+import {createRequire} from 'module';
 import {themes as prismThemes} from 'prism-react-renderer';
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const require = createRequire(import.meta.url);
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -52,7 +51,7 @@ const config = {
         blog: false,
         theme: {
           customCss: [
-            path.resolve(__dirname, '../packages/css/dist/serene.css'),
+            require.resolve('serene-css/serene.css'),
             './src/css/custom.css',
           ],
         },
@@ -108,7 +107,7 @@ const config = {
               },
               {
                 label: 'jsDelivr',
-                href: 'https://cdn.jsdelivr.net/npm/serene-ui@2/dist/serene.min.css',
+                href: 'https://cdn.jsdelivr.net/npm/serene-css@2/dist/serene.min.css',
               },
             ],
           },

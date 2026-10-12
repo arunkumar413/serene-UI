@@ -6,7 +6,7 @@ This repository has two parts:
 
 | Path | Purpose |
 | --- | --- |
-| `packages/css` | Source and built CSS published as `serene-ui` |
+| `packages/css` | Source and built CSS published as `serene-css` |
 | `website` | Docusaurus documentation |
 
 ## Use the library
@@ -15,13 +15,13 @@ CDN (jsDelivr, after npm publish):
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/serene-ui@2/dist/serene.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/serene-css@2/dist/serene.min.css" />
 ```
 
 npm:
 
 ```bash
-npm install serene-ui
+npm install serene-css
 ```
 
 ```html
@@ -44,4 +44,4 @@ npm run build:css   # packages/css/dist/serene.css and serene.min.css
 npm run build       # CSS + static docs site in website/build
 ```
 
-Override theme tokens in `:root`. See the [theming docs](https://serene-ui.vercel.app/docs/theming) and `packages/css/src/tokens.css`.
+To customize colors, sizes, and other tokens, override CSS custom properties in your own stylesheet after Serene loads. See [Theming](https://serene-ui.vercel.app/docs/theming).

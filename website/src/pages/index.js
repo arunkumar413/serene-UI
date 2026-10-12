@@ -11,7 +11,7 @@ export default function Home() {
         <div>
           <h1>Serene UI</h1>
           <p className={styles.lead}>
-            Welcome to Serene UI. A simple CSS library to compose HTML components
+            A simple CSS library to compose HTML components
             faster. A library made keeping in mind the ease of learning and
             intuitiveness.
           </p>

@@ -1,6 +1,7 @@
 .hero {
   padding: 1rem;
-  background-image: linear-gradient(to top, #209cff 0%, #68e0cf 100%);
+  /* background-image: linear-gradient(to top, #209cff 0%, #68e0cf 100%); */
+  background-image: linear-gradient(39deg, #209cff 62.18%, #68e0cf);
   color: white;
   text-align: center;
   display: grid;

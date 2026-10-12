@@ -3,7 +3,68 @@ sidebar_position: 2
 title: Theming
 ---
 
-Override CSS custom properties on `:root` (or a wrapper) to change the design system without rewriting component classes.
+Serene UI ships default token values inside the CSS bundle. You do not edit the CDN file or the npm package. Override the CSS custom properties in **your own stylesheet after Serene loads**. Later declarations of the same property win. Set only the tokens you want to change; the rest keep their defaults.
+
+## CDN
+
+Load Serene first, then a local theme file:
+
+```html
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/serene-css@2/dist/serene.min.css"
+/>
+<link rel="stylesheet" href="/theme.css" />
+```
+
+```css
+/* theme.css */
+:root {
+  --primary-color: #1d4ed8;
+  --secondary-color: #9d174d;
+  --round-radius: 0.25rem;
+}
+```
+
+An inline `<style>` after the Serene `<link>` works the same way.
+
+## npm
+
+Import Serene first, then your overrides:
+
+```css
+@import "serene-css";
+
+:root {
+  --primary-color: #1d4ed8;
+  --btn-small-font-size: 0.875rem;
+}
+```
+
+If you import Serene from HTML instead of CSS, keep the same order: Serene stylesheet, then your theme stylesheet.
+
+## Scoped themes
+
+Overrides can sit on a wrapper instead of `:root`. Classes inside that wrapper pick up the new values.
+
+```css
+.theme-dark {
+  --primary-color: #93c5fd;
+  --btn-primary-font-color: #0f172a;
+}
+```
+
+```html
+<div class="theme-dark">
+  <button class="ser-btn-primary-small">Submit</button>
+</div>
+```
+
+This works because component rules use `var(--primary-color)` (and the other tokens), not hardcoded colors.
+
+## Token reference
+
+Defaults live in [`packages/css/src/tokens.css`](https://github.com/arunkumar413/serene-UI/blob/main/packages/css/src/tokens.css).
 
 ```css
 :root {
@@ -16,11 +77,19 @@ Override CSS custom properties on `:root` (or a wrapper) to change the design sy
   --btn-large-font-size: 1.4rem;
   --btn-primary-font-color: white;
   --btn-secondary-font-color: white;
+  --small-input-font-size: 1rem;
+  --medium-input-font-size: 1.2rem;
+  --large-input-font-size: 1.6rem;
   --danger-color: red;
   --warning-color: orange;
   --success-color: green;
+  --paragraph-font-size: 1rem;
+  --h1-font-size: 2rem;
   --primary-hover-background: aliceblue;
   --secondary-hover-background: #ffc0cb33;
+  --small-button-padding: 0.5rem;
+  --medium-button-padding: 0.8rem;
+  --large-button-padding: 1rem;
   --round-radius: 0.5rem;
   --rounder-radius: 1rem;
   --roundest-radius: 1.2rem;
@@ -29,7 +98,40 @@ Override CSS custom properties on `:root` (or a wrapper) to change the design sy
   --font-size-medium: 1.3rem;
   --font-size-large: 2rem;
   --font-size-xlarge: 2.5rem;
+  --color-grey-1: rgba(0, 0, 0, 0.1);
+  --color-grey-2: rgba(0, 0, 0, 0.2);
+  --color-grey-3: rgba(0, 0, 0, 0.3);
+  --color-grey-4: rgba(0, 0, 0, 0.4);
+  --color-grey-5: rgba(0, 0, 0, 0.5);
+  --bg-color-grey-1: rgba(0, 0, 0, 0.1);
+  --bg-color-grey-2: rgba(0, 0, 0, 0.2);
+  --bg-color-grey-3: rgba(0, 0, 0, 0.3);
+  --bg-color-grey-4: rgba(0, 0, 0, 0.4);
+  --bg-color-grey-5: rgba(0, 0, 0, 0.5);
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 24px;
+  --spacing-6: 32px;
+  --spacing-7: 40px;
+  --spacing-8: 48px;
+  --spacing-9: 64px;
+  --spacing-10: 80px;
+  --fs-1-p3: clamp(4rem, 2.5rem + 6vw, 7rem);
+  --fs-1-p2: clamp(3.5rem, 2.25rem + 5vw, 6rem);
+  --fs-1-p1: clamp(3rem, 2rem + 4vw, 5rem);
+  --fs-1: clamp(2.25rem, 1.5rem + 3vw, 3.5rem);
+  --fs-2: clamp(1.875rem, 1.35rem + 2vw, 3rem);
+  --fs-3: clamp(1.5rem, 1.2rem + 1.5vw, 2.25rem);
+  --fs-4: clamp(1.25rem, 1.05rem + 1vw, 1.75rem);
+  --fs-5: clamp(1.125rem, 1rem + 0.6vw, 1.5rem);
+  --fs-6: clamp(1rem, 0.95rem + 0.35vw, 1.25rem);
+  --fs-6-m1: clamp(0.9375rem, 0.9rem + 0.25vw, 1.125rem);
+  --fs-6-m2: clamp(0.875rem, 0.85rem + 0.2vw, 1rem);
+  --fs-6-m3: clamp(0.8125rem, 0.8rem + 0.15vw, 0.9375rem);
+  --fs-6-m4: clamp(0.75rem, 0.74rem + 0.1vw, 0.875rem);
+  --fs-6-m5: 0.75rem;
+  --fs-6-m6: 0.6875rem;
 }
 ```
-
-The full token list lives in [`packages/css/src/tokens.css`](https://github.com/arunkumar413/serene-UI/blob/main/packages/css/src/tokens.css) in this repository.
